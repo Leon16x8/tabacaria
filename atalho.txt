@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --uac-admin --hidden-import bcrypt --hidden-import sqlite3 --hidden-import pandas --hidden-import PyQt5 --hidden-import shutil --icon="imagens/logoprincipal.ico" --add-data "imagens/logoprincipal.ico;imagens" --add-data "imagens/logoprincipal.png;imagens" --add-data "banco_de_dados/sistema_vendas.db;." .\main.py
