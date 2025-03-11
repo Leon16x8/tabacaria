@@ -13,16 +13,23 @@ def get_database_path():
     """Garante que o banco de dados esteja acessível diretamente do diretório de instalação."""
     # Caminho absoluto do banco de dados
     packaged_db_path = "C:/Program Files (x86)/Controle de Vendas Fabio Pipas & RBShop/banco_de_dados/sistema_vendas.db"
+    alternative_db_path = "C:/Program Files/Controle de Vendas Fabio Pipas & RBShop/banco_de_dados/sistema_vendas.db"
 
     print(f"Packaged DB Path: {packaged_db_path}")
 
-    # Verifica se o banco de dados existe
-    if not os.path.exists(packaged_db_path):
-        print("Erro: O banco de dados não foi encontrado no caminho especificado.")
-        QMessageBox.critical(None, "Erro", "O banco de dados não foi encontrado no caminho especificado.")
-        return None  # Retorna None se o banco de dados não existir
+    # Verifica se o banco de dados existe no caminho original
+    if os.path.exists(packaged_db_path):
+        return packaged_db_path  # Retorna o caminho original se existir
 
-    return packaged_db_path
+    # Se não existir, verifica o caminho alternativo
+    print(f"Verificando caminho alternativo: {alternative_db_path}")
+    if os.path.exists(alternative_db_path):
+        return alternative_db_path  # Retorna o caminho alternativo se existir
+
+    # Se nenhum dos caminhos existir, exibe uma mensagem de erro
+    print("Erro: O banco de dados não foi encontrado em nenhum dos caminhos especificados.")
+    QMessageBox.critical(None, "Erro", "O banco de dados não foi encontrado em nenhum dos caminhos especificados.")
+    return None  # Retorna None se o banco de dados não existir em nenhum dos caminhos
 
 def resource_path(relative_path):
     """Obtem o caminho absoluto para um recurso, funciona para desenvolvimento e executável."""
@@ -34,10 +41,15 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
+import os
+import shutil
+from PyQt5.QtWidgets import QMessageBox
+
 def backup_database():
     """Faz um backup do banco de dados, sobrescrevendo o backup anterior se existir."""
     # Caminho do banco de dados original
-    db_path = "C:/Program Files (x86)/Controle de Vendas Fabio Pipas & RBShop/banco_de_dados/sistema_vendas.db"
+    db_path_x86 = os.path.join("C:\\", "Program Files (x86)", "Controle de Vendas Fabio Pipas & RBShop", "banco_de_dados", "sistema_vendas.db")
+    db_path = os.path.join("C:\\", "Program Files", "Controle de Vendas Fabio Pipas & RBShop", "banco_de_dados", "sistema_vendas.db")
     
     # Caminho do diretório de backup
     backup_dir = os.path.join(os.path.expanduser("~"), "backup_banco_dados")
@@ -50,13 +62,36 @@ def backup_database():
     backup_file = os.path.join(backup_dir, "sistema_vendas_backup.db")
 
     try:
+        # Inicializa a variável db_path como None
+        db_path_to_use = None
+
+        # Verifica se o banco de dados existe no caminho x86
+        print(f"Verificando caminho x86: {db_path_x86}")
+        if os.path.exists(db_path_x86):
+            db_path_to_use = db_path_x86  # Usa o caminho x86 se existir
+            print(f"Banco de dados encontrado em: {db_path_x86}")
+        else:
+            print(f"Banco de dados não encontrado em: {db_path_x86}")
+
+        # Verifica se o banco de dados existe no caminho alternativo
+        print(f"Verificando caminho alternativo: {db_path}")
+        if os.path.exists(db_path):
+            db_path_to_use = db_path  # Usa o caminho alternativo se existir
+            print(f"Banco de dados encontrado em: {db_path}")
+        else:
+            print(f"Banco de dados não encontrado em: {db_path}")
+
+        # Se nenhum dos caminhos for encontrado, levanta uma exceção
+        if db_path_to_use is None:
+            raise FileNotFoundError("O banco de dados não foi encontrado em nenhum dos caminhos especificados.")
+
         # Se o arquivo de backup já existir, exclua-o
         if os.path.exists(backup_file):
             os.remove(backup_file)
             print(f"Backup anterior removido: {backup_file}")
 
         # Copia o banco de dados para o diretório de backup
-        shutil.copy(db_path, backup_file)
+        shutil.copy(db_path_to_use, backup_file)
         print(f"Backup realizado com sucesso: {backup_file}")
     except Exception as e:
         print(f"Erro ao realizar backup: {e}")
@@ -1295,28 +1330,43 @@ class TelaRelatorios(QMainWindow):
             self.tabela_relatorios.setItem(i, 1, item_total_vendido)
 
     def mostrar_faturamento_diario(self):
-        self.cursor.execute("""
-            SELECT DATE(data_pagamento) as data, SUM(valor) as total
-            FROM vendas
-            WHERE DATE(data_pagamento) = DATE('now')
-            GROUP BY data
-        """)
-        faturamento = self.cursor.fetchall()
-        
-        self.tabela_relatorios.setRowCount(len(faturamento))
-        self.tabela_relatorios.setColumnCount(2)
-        self.tabela_relatorios.setHorizontalHeaderLabels(["Data", "Total Faturado"])
-        
-        for i, (data, total) in enumerate(faturamento):
-            # Adiciona e centraliza o item para a data
-            item_data = QTableWidgetItem(data)
-            item_data.setTextAlignment(Qt.AlignCenter)  # Centraliza o texto
-            self.tabela_relatorios.setItem(i, 0, item_data)
+        try:
+            self.cursor.execute("""
+                SELECT DATE(data_pagamento) as data, SUM(valor) as total
+                FROM vendas
+                WHERE DATE(data_pagamento) = DATE('now', 'localtime')
+                GROUP BY data
+            """)
+            faturamento = self.cursor.fetchall()
             
-            # Adiciona e centraliza o item para o total faturado
-            item_total = QTableWidgetItem(f"R$ {total:.2f}")
-            item_total.setTextAlignment(Qt.AlignCenter)  # Centraliza o texto
-            self.tabela_relatorios.setItem(i, 1, item_total)
+            # Debug: Verifique o resultado da consulta
+            print("Resultado da consulta:", faturamento)
+
+            # Limpa a tabela antes de adicionar novos dados
+            self.tabela_relatorios.setRowCount(0)
+            self.tabela_relatorios.setColumnCount(2)
+            self.tabela_relatorios.setHorizontalHeaderLabels(["Data", "Total Faturado"])
+            
+            if faturamento:  # Verifica se há dados para mostrar
+                self.tabela_relatorios.setRowCount(len(faturamento))
+                for i, (data, total) in enumerate(faturamento):
+                    # Adiciona e centraliza o item para a data
+                    item_data = QTableWidgetItem(data)
+                    item_data.setTextAlignment(Qt.AlignCenter)  # Centraliza o texto
+                    self.tabela_relatorios.setItem(i, 0, item_data)
+                    
+                    # Adiciona e centraliza o item para o total faturado
+                    item_total = QTableWidgetItem(f"R$ {total:.2f}")
+                    item_total.setTextAlignment(Qt.AlignCenter)  # Centraliza o texto
+                    self.tabela_relatorios.setItem(i, 1, item_total)
+            else:
+                print("Nenhum faturamento encontrado para hoje.")
+                # Opcional: Adicione uma mensagem na tabela informando que não há dados
+                self.tabela_relatorios.setRowCount(1)
+                self.tabela_relatorios.setItem(0, 0, QTableWidgetItem("Nenhum faturamento encontrado"))
+                self.tabela_relatorios.setItem(0, 1, QTableWidgetItem(""))
+        except Exception as e:
+            print(f"Erro ao mostrar faturamento diário: {e}")
 
 
     def mostrar_faturamento_semanal(self):

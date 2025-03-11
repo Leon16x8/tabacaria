@@ -3,10 +3,10 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=['C:\\Users\\leona\\AppData\\Local\\Programs\\Python\\Python38-32\\Lib\\site-packages\\PyQt5\\Qt5\\bin'],
     binaries=[],
-    datas=[('imagens/logoprincipal.ico', 'imagens'), ('imagens/logoprincipal.png', 'imagens'), ('banco_de_dados/sistema_vendas.db', '.')],
-    hiddenimports=['bcrypt', 'sqlite3', 'pandas', 'PyQt5', 'shutil'],
+    datas=[('imagens/logoprincipal.ico', 'imagens'), ('imagens/logoprincipal.png', 'imagens'), ('banco_de_dados/sistema_vendas.db', '.'), ('C:\\Users\\leona\\AppData\\Local\\Programs\\Python\\Python38-32\\Lib\\site-packages\\PyQt5\\Qt5\\bin', 'PyQt5\\Qt5\\bin')],
+    hiddenimports=['PyQt5.sip', 'openpyxl', 'bcrypt', 'sqlite3', 'pandas', 'PyQt5', 'shutil'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
