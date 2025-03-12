@@ -15,19 +15,15 @@ def get_database_path():
     packaged_db_path = "C:/Program Files (x86)/Controle de Vendas Fabio Pipas & RBShop/banco_de_dados/sistema_vendas.db"
     alternative_db_path = "C:/Program Files/Controle de Vendas Fabio Pipas & RBShop/banco_de_dados/sistema_vendas.db"
 
-    print(f"Packaged DB Path: {packaged_db_path}")
-
     # Verifica se o banco de dados existe no caminho original
     if os.path.exists(packaged_db_path):
         return packaged_db_path  # Retorna o caminho original se existir
 
     # Se não existir, verifica o caminho alternativo
-    print(f"Verificando caminho alternativo: {alternative_db_path}")
     if os.path.exists(alternative_db_path):
         return alternative_db_path  # Retorna o caminho alternativo se existir
 
     # Se nenhum dos caminhos existir, exibe uma mensagem de erro
-    print("Erro: O banco de dados não foi encontrado em nenhum dos caminhos especificados.")
     QMessageBox.critical(None, "Erro", "O banco de dados não foi encontrado em nenhum dos caminhos especificados.")
     return None  # Retorna None se o banco de dados não existir em nenhum dos caminhos
 
@@ -40,10 +36,6 @@ def resource_path(relative_path):
         base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
-
-import os
-import shutil
-from PyQt5.QtWidgets import QMessageBox
 
 def backup_database():
     """Faz um backup do banco de dados, sobrescrevendo o backup anterior se existir."""
@@ -66,18 +58,14 @@ def backup_database():
         db_path_to_use = None
 
         # Verifica se o banco de dados existe no caminho x86
-        print(f"Verificando caminho x86: {db_path_x86}")
         if os.path.exists(db_path_x86):
             db_path_to_use = db_path_x86  # Usa o caminho x86 se existir
-            print(f"Banco de dados encontrado em: {db_path_x86}")
         else:
             print(f"Banco de dados não encontrado em: {db_path_x86}")
 
         # Verifica se o banco de dados existe no caminho alternativo
-        print(f"Verificando caminho alternativo: {db_path}")
         if os.path.exists(db_path):
             db_path_to_use = db_path  # Usa o caminho alternativo se existir
-            print(f"Banco de dados encontrado em: {db_path}")
         else:
             print(f"Banco de dados não encontrado em: {db_path}")
 
@@ -88,13 +76,10 @@ def backup_database():
         # Se o arquivo de backup já existir, exclua-o
         if os.path.exists(backup_file):
             os.remove(backup_file)
-            print(f"Backup anterior removido: {backup_file}")
 
         # Copia o banco de dados para o diretório de backup
         shutil.copy(db_path_to_use, backup_file)
-        print(f"Backup realizado com sucesso: {backup_file}")
     except Exception as e:
-        print(f"Erro ao realizar backup: {e}")
         QMessageBox.critical(None, "Erro", f"Erro ao realizar backup: {e}")
 
 class PasswordToggleButton(QPushButton):
@@ -191,28 +176,37 @@ class LoginWindow(QMainWindow):
         self.input_password.clear()
 
     def verificar_login(self, username, password):
-        conn = None  # Inicializa a variável conn
+        """Verifica se o usuário e a senha estão corretos."""
+        conn = None
         try:
             conn = sqlite3.connect(get_database_path())
             cursor = conn.cursor()
-            cursor.execute("SELECT password FROM usuarios WHERE username = ?", (username,))
-            user = cursor.fetchone()
-            if user is not None:
-                if bcrypt.checkpw(password.encode('utf-8'), user[0]):
-                    return True
-                else:
-                    print("Senha incorreta.")
-                    return False
-            else:
+            user = self.get_user(cursor, username)
+            
+            if user is None:
                 print("Usuário não encontrado.")
+                return False
+            
+            if self.check_password(password, user[0]):
+                return True
+            else:
+                print("Senha incorreta.")
                 return False
         except sqlite3.Error as e:
             QMessageBox.critical(self, "Erro de Banco de Dados", f"Erro ao acessar o banco de dados: {e}")
-            print(f"Erro: {e}")  # Exibe o erro no console
             return False
         finally:
             if conn is not None:
-                conn.close()  # Fecha a conexão se ela foi aberta
+                conn.close()
+
+    def get_user(self, cursor, username):
+        """Obtém o usuário do banco de dados."""
+        cursor.execute("SELECT password FROM usuarios WHERE username = ?", (username,))
+        return cursor.fetchone()
+
+    def check_password(self, password, hashed_password):
+        """Verifica se a senha fornecida corresponde à senha armazenada."""
+        return bcrypt.checkpw(password.encode('utf-8'), hashed_password)
 
 
     def open_registration(self):
@@ -350,7 +344,7 @@ class SistemaVendas(QMainWindow):
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(self.label)
 
-       # Adicionando o logo
+     # Adicionando o logo
         self.logo_label = QLabel()
         # Usando um caminho relativo para a imagem do logo
         logo_path = resource_path("imagens/logoprincipal.png")  # Usando a função resource_path
@@ -360,6 +354,9 @@ class SistemaVendas(QMainWindow):
         if self.logo_pixmap.isNull():
             QMessageBox.warning(self, "Erro", "Não foi possível carregar a imagem do logo.")
         else:
+            # Redimensiona a imagem para 150x150 pixels (ou qualquer tamanho desejado)
+            self.logo_pixmap = self.logo_pixmap.scaled(600, 600, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+            
             self.logo_label.setPixmap(self.logo_pixmap)
             self.logo_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -603,7 +600,7 @@ class TelaVenda(QMainWindow):
             self.combo_cliente.hide()  # Ocultar a combobox de clientes
     
     def carregar_categorias(self):
-        self.cursor.execute("SELECT nome FROM categorias")  # Busca categorias da tabela categorias
+        self.cursor.execute("SELECT nome FROM categorias ORDER BY nome ASC")  # Busca categorias da tabela categorias
         categorias = self.cursor.fetchall()
         self.combo_categoria.clear()  # Limpa o combo antes de adicionar novas categorias
         self.combo_categoria.addItems([c[0] for c in categorias])
@@ -616,7 +613,7 @@ class TelaVenda(QMainWindow):
     def carregar_produtos_por_categoria(self):
         categoria_selecionada = self.combo_categoria.currentText()
         self.combo_produto.clear()
-        self.cursor.execute("SELECT produto FROM estoque WHERE categoria = ?", (categoria_selecionada,))
+        self.cursor.execute("SELECT produto FROM estoque WHERE categoria = ? ORDER BY produto ASC", (categoria_selecionada,))
         produtos = self.cursor.fetchall()
         self.combo_produto.addItems([p[0] for p in produtos])
         
@@ -848,7 +845,7 @@ class TelaEstoque(QMainWindow):
 
     def carregar_categorias(self):
         """Carrega as categorias do banco de dados na ComboBox."""
-        self.cursor.execute("SELECT nome FROM categorias")
+        self.cursor.execute("SELECT nome FROM categorias ORDER BY nome ASC")
         categorias = self.cursor.fetchall()
         self.combo_categoria.clear()  # Limpa a ComboBox antes de adicionar novas categorias
         self.combo_categoria.addItem("Todas as Categorias")  # Adiciona a opção para mostrar todas as categorias
@@ -856,14 +853,42 @@ class TelaEstoque(QMainWindow):
             self.combo_categoria.addItem(categoria[0])  # Adiciona cada categoria à ComboBox
 
     def filtrar_produtos_por_categoria(self):
-        """Filtra os produtos na tabela com base na categoria selecionada na ComboBox."""
+        """Filtra os produtos na tabela com base na categoria selecionada na ComboBox em ordem alfabética."""
         categoria_selecionada = self.combo_categoria.currentText()
         if categoria_selecionada == "Todas as Categorias":
             self.carregar_estoque()  # Carrega todos os produtos
         else:
-            self.cursor.execute("SELECT produto, categoria, quantidade, preco, imagem FROM estoque WHERE categoria = ?", (categoria_selecionada,))
+            self.cursor.execute("SELECT produto, categoria, quantidade, preco, imagem FROM estoque WHERE categoria = ? ORDER BY produto ASC", (categoria_selecionada,))
             produtos = self.cursor.fetchall()
             self.atualizar_tabela(produtos)
+
+    def carregar_produtos_por_categoria(self, categoria_selecionada):
+        """Carrega os produtos da categoria selecionada na tabela."""
+        self.cursor.execute("SELECT produto, categoria, quantidade, preco, imagem FROM estoque WHERE categoria = ? ORDER BY produto ASC", (categoria_selecionada,))
+        produtos = self.cursor.fetchall()
+        
+        self.tabela_estoque.setRowCount(len(produtos))
+        
+        for i, produto in enumerate(produtos):
+            for j, dado in enumerate(produto):
+                if j == 3:  # Se for a coluna do preço
+                    try:
+                        preco_float = float(dado)
+                        preco_formatado = f"R$ {preco_float:.2f}".replace('.', ',')
+                    except ValueError:
+                        preco_formatado = "R$ 0,00"
+                    item = QTableWidgetItem(preco_formatado)
+                else:
+                    item = QTableWidgetItem(str(dado))
+                item.setTextAlignment(Qt.AlignCenter)
+                self.tabela_estoque.setItem(i, j, item)
+
+            # Verifica se a quantidade está abaixo de um limite
+            if produto[2] < 6:  # Se a quantidade for menor que 6, destaque a linha
+                for j in range(self.tabela_estoque.columnCount()):
+                    self.tabela_estoque.item(i, j).setBackground(QColor(255, 200, 200))  # Cor de fundo vermelha clara
+
+        self.tabela_estoque.resizeColumnsToContents()  # Ajusta colunas automaticamente
 
     def atualizar_tabela(self, produtos):
         """Atualiza a tabela de estoque com os produtos fornecidos."""
@@ -900,7 +925,12 @@ class TelaEstoque(QMainWindow):
             self.label_imagem.clear()  # Limpa a imagem se nenhuma linha estiver selecionada
 
     def carregar_estoque(self):
-        self.cursor.execute("SELECT produto, categoria, quantidade, preco, imagem FROM estoque")
+        # Modifique a consulta SQL para incluir a ordenação das categorias e produtos
+        self.cursor.execute("""
+            SELECT produto, categoria, quantidade, preco, imagem 
+            FROM estoque 
+            ORDER BY categoria ASC, produto ASC
+        """)
         produtos = self.cursor.fetchall()
         self.tabela_estoque.setRowCount(len(produtos))
         
@@ -919,16 +949,16 @@ class TelaEstoque(QMainWindow):
                 self.tabela_estoque.setItem(i, j, item)
 
             # Verifica se a quantidade está abaixo de um limite
-            if produto[2] < 6:  # Se a quantidade for menor que 10, destaque a linha
+            if produto[2] < 6:  # Se a quantidade for menor que 6, destaque a linha
                 for j in range(self.tabela_estoque.columnCount()):
                     self.tabela_estoque.item(i, j).setBackground(QColor(255, 200, 200))  # Cor de fundo vermelha clara
 
         self.tabela_estoque.resizeColumnsToContents()  # Ajusta colunas automaticamente
     
     def adicionar_produto(self):
+        categoria_selecionada = self.combo_categoria.currentText()  # Armazena a categoria selecionada
         self.tela_adicionar = TelaAdicionarProduto(self.conn)
-        self.tela_adicionar.produto_adicionado.connect(self.carregar_estoque)
-        self.carregar_estoque  # Conecta o sinal para atualizar a tabela após adicionar o produto
+        self.tela_adicionar.produto_adicionado.connect(lambda: self.carregar_produtos_por_categoria(categoria_selecionada))  # Passa a categoria selecionada
         self.tela_adicionar.exec_()  # Abre a janela de adicionar produto
     
     def editar_produto(self):
@@ -944,9 +974,8 @@ class TelaEstoque(QMainWindow):
         imagem = self.tabela_estoque.item(row, 4).text()  # Obtém o caminho da imagem
 
         self.tela_editar = TelaEditarProduto(self.conn, produto, categoria, quantidade, preco, imagem)
+        self.tela_editar.produto_adicionado.connect(self.filtrar_produtos_por_categoria)  # Chama a função de filtragem
         self.tela_editar.exec_()
-        backup_database()
-        self.carregar_estoque()  # Atualiza a tabela após edição
 
     def remover_produto(self):
         row = self.tabela_estoque.currentRow()
@@ -1014,7 +1043,7 @@ class TelaGerenciarCategorias(QDialog):
 
     def carregar_categorias(self):
         self.lista_categorias.clear()
-        self.cursor.execute("SELECT nome FROM categorias")
+        self.cursor.execute("SELECT nome FROM categorias ORDER BY nome ASC")
         categorias = self.cursor.fetchall()
         for categoria in categorias:
             self.lista_categorias.addItem(categoria[0])
@@ -1038,12 +1067,22 @@ class TelaGerenciarCategorias(QDialog):
         item_selecionado = self.lista_categorias.currentItem()
         if item_selecionado:
             categoria = item_selecionado.text()
+            
+            # Verifica se existem produtos na categoria
+            self.cursor.execute("SELECT COUNT(*) FROM estoque WHERE categoria = ?", (categoria,))
+            count = self.cursor.fetchone()[0]
+            
+            if count > 0:
+                QMessageBox.warning(self, "Erro", "Não é possível remover a categoria porque existem produtos associados a ela.")
+                return
+            
             resposta = QMessageBox.question(self, "Confirmar Remoção", f"Tem certeza que deseja remover a categoria '{categoria}'?", QMessageBox.Yes | QMessageBox.No)
             if resposta == QMessageBox.Yes:
                 self.cursor.execute("DELETE FROM categorias WHERE nome = ?", (categoria,))
                 self.conn.commit()
                 backup_database()
                 self.carregar_categorias()  # Atualiza a lista de categorias
+                self.categoria_adicionada.emit()  # Emite o sinal para atualizar a ComboBox na tela de estoque
         else:
             QMessageBox.warning(self, "Erro", "Selecione uma categoria para remover.")
 
@@ -1094,7 +1133,7 @@ class TelaAdicionarProduto(QDialog):
 
     def carregar_categorias(self):
         self.input_categoria.clear()  # Limpa as categorias existentes
-        self.cursor.execute("SELECT nome FROM categorias")  # Busca categorias da tabela categorias
+        self.cursor.execute("SELECT nome FROM categorias ORDER BY nome ASC")  # Busca categorias da tabela categorias
         categorias = self.cursor.fetchall()
         for categoria in categorias:
             self.input_categoria.addItem(categoria[0])  # Adiciona cada categoria à combobox
@@ -1123,6 +1162,15 @@ class TelaAdicionarProduto(QDialog):
                 QMessageBox.warning(self, "Erro", "Por favor, preencha todos os campos corretamente.")
                 return
 
+            # Verifica se o produto já existe no estoque
+            self.cursor.execute("SELECT COUNT(*) FROM estoque WHERE produto = ?", (produto,))
+            existe = self.cursor.fetchone()[0]
+
+            if existe > 0:
+                QMessageBox.warning(self, "Erro", "Este produto já está cadastrado no estoque.")
+                return
+
+            # Se o produto não existir, insere no banco de dados
             self.cursor.execute("INSERT INTO estoque (produto, categoria, quantidade, preco, imagem) VALUES (?, ?, ?, ?, ?)", 
                                 (produto, categoria, quantidade_int, preco_float, imagem))
             self.conn.commit()
@@ -1134,6 +1182,8 @@ class TelaAdicionarProduto(QDialog):
             QMessageBox.warning(self, "Erro", "Por favor, insira valores válidos para quantidade e preço.")
 
 class TelaEditarProduto(QDialog):
+    produto_adicionado = pyqtSignal()  # Adicione esta linha
+
     def __init__(self, conn, produto, categoria, quantidade, preco, imagem):
         super().__init__()
         self.setWindowTitle("Editar Produto")
@@ -1181,7 +1231,7 @@ class TelaEditarProduto(QDialog):
 
     def carregar_categorias(self):
         self.input_categoria.clear()
-        self.cursor.execute("SELECT nome FROM categorias")
+        self.cursor.execute("SELECT nome FROM categorias ORDER BY nome ASC")
         categorias = self.cursor.fetchall()
         for categoria in categorias:
             self.input_categoria.addItem(categoria[0])
@@ -1200,12 +1250,25 @@ class TelaEditarProduto(QDialog):
         imagem = self.input_imagem.text().strip()
 
         preco = preco.replace("R$ ", "").replace(",", ".").strip()
-        
-        self.cursor.execute("UPDATE estoque SET produto = ?, categoria = ?, quantidade = ?, preco = ?, imagem = ? WHERE produto = ?", 
-                            (novo_produto, categoria, quantidade, preco, imagem, self.produto_original))
-        self.conn.commit()
-        backup_database()
-        self.close() 
+
+        # Verifica se o novo nome do produto já existe no estoque
+        self.cursor.execute("SELECT COUNT(*) FROM estoque WHERE produto = ? AND produto != ?", (novo_produto, self.produto_original))
+        existe = self.cursor.fetchone()[0]
+
+        if existe > 0:
+            QMessageBox.warning(self, "Erro", "Este produto já está cadastrado no estoque.")
+            return
+
+        try:
+            # Atualiza o produto no banco de dados
+            self.cursor.execute("UPDATE estoque SET produto = ?, categoria = ?, quantidade = ?, preco = ?, imagem = ? WHERE produto = ?", 
+                                (novo_produto, categoria, quantidade, preco, imagem, self.produto_original))
+            self.conn.commit()
+            backup_database()
+            self.produto_adicionado.emit()  # Emite o sinal após a edição
+            self.close()
+        except Exception as e:
+            QMessageBox.warning(self, "Erro", f"Ocorreu um erro ao salvar o produto: {str(e)}")
         
 class TelaRelatorios(QMainWindow):
     def __init__(self, conn):

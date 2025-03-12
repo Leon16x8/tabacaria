@@ -10,7 +10,7 @@ charset="UTF-8";
 	"argparse" [label="<f0> SourceModule| <f1> argparse",shape="record"];
 	"textwrap" [label="<f0> SourceModule| <f1> textwrap",shape="record"];
 	"copy" [label="<f0> SourceModule| <f1> copy",shape="record"];
-	"'org.python'" [label="<f0> MissingModule| <f1> 'org.python'",shape="record"];
+	"org" [label="<f0> MissingModule| <f1> org",shape="record"];
 	"gettext" [label="<f0> SourceModule| <f1> gettext",shape="record"];
 	"errno" [label="<f0> BuiltinModule| <f1> errno",shape="record"];
 	"struct" [label="<f0> SourceModule| <f1> struct",shape="record"];
@@ -47,7 +47,7 @@ charset="UTF-8";
 	"atexit" [label="<f0> BuiltinModule| <f1> atexit",shape="record"];
 	"pickle" [label="<f0> SourceModule| <f1> pickle",shape="record"];
 	"pprint" [label="<f0> SourceModule| <f1> pprint",shape="record"];
-	"org" [label="<f0> MissingModule| <f1> org",shape="record"];
+	"'org.python'" [label="<f0> MissingModule| <f1> 'org.python'",shape="record"];
 	"_compat_pickle" [label="<f0> SourceModule| <f1> _compat_pickle",shape="record"];
 	"string" [label="<f0> SourceModule| <f1> string",shape="record"];
 	"_string" [label="<f0> BuiltinModule| <f1> _string",shape="record"];
@@ -1171,27 +1171,42 @@ charset="UTF-8";
 	"_cffi_backend" [label="<f0> Extension| <f1> _cffi_backend",shape="record"];
 	"bcrypt.__about__" [label="<f0> SourceModule| <f1> bcrypt.__about__",shape="record"];
 	"bcrypt._bcrypt" [label="<f0> Extension| <f1> bcrypt._bcrypt",shape="record"];
-	"_bootlocale" [label="<f0> SourceModule| <f1> _bootlocale",shape="record"];
+	"sre_compile" [label="<f0> SourceModule| <f1> sre_compile",shape="record"];
+	"heapq" [label="<f0> SourceModule| <f1> heapq",shape="record"];
+	"_heapq" [label="<f0> BuiltinModule| <f1> _heapq",shape="record"];
+	"_collections_abc" [label="<f0> SourceModule| <f1> _collections_abc",shape="record"];
+	"sre_constants" [label="<f0> SourceModule| <f1> sre_constants",shape="record"];
+	"posixpath" [label="<f0> SourceModule| <f1> posixpath",shape="record"];
+	"linecache" [label="<f0> SourceModule| <f1> linecache",shape="record"];
+	"keyword" [label="<f0> SourceModule| <f1> keyword",shape="record"];
+	"_weakrefset" [label="<f0> SourceModule| <f1> _weakrefset",shape="record"];
+	"locale" [label="<f0> SourceModule| <f1> locale",shape="record"];
 	"_locale" [label="<f0> BuiltinModule| <f1> _locale",shape="record"];
+	"stat" [label="<f0> SourceModule| <f1> stat",shape="record"];
+	"_stat" [label="<f0> BuiltinModule| <f1> _stat",shape="record"];
+	"os" [label="<f0> SourceModule| <f1> os",shape="record"];
+	"types" [label="<f0> SourceModule| <f1> types",shape="record"];
+	"traceback" [label="<f0> SourceModule| <f1> traceback",shape="record"];
+	"copyreg" [label="<f0> SourceModule| <f1> copyreg",shape="record"];
+	"weakref" [label="<f0> SourceModule| <f1> weakref",shape="record"];
+	"reprlib" [label="<f0> SourceModule| <f1> reprlib",shape="record"];
+	"io" [label="<f0> SourceModule| <f1> io",shape="record"];
+	"genericpath" [label="<f0> SourceModule| <f1> genericpath",shape="record"];
+	"collections.abc" [label="<f0> SourceModule| <f1> collections.abc",shape="record"];
+	"collections" [label="<f0> Package| <f1> collections",shape="record"];
+	"sre_parse" [label="<f0> SourceModule| <f1> sre_parse",shape="record"];
+	"operator" [label="<f0> SourceModule| <f1> operator",shape="record"];
+	"functools" [label="<f0> SourceModule| <f1> functools",shape="record"];
+	"_functools" [label="<f0> BuiltinModule| <f1> _functools",shape="record"];
+	"enum" [label="<f0> SourceModule| <f1> enum",shape="record"];
 	"abc" [label="<f0> SourceModule| <f1> abc",shape="record"];
 	"_py_abc" [label="<f0> SourceModule| <f1> _py_abc",shape="record"];
 	"_abc" [label="<f0> BuiltinModule| <f1> _abc",shape="record"];
-	"functools" [label="<f0> SourceModule| <f1> functools",shape="record"];
-	"_functools" [label="<f0> BuiltinModule| <f1> _functools",shape="record"];
-	"reprlib" [label="<f0> SourceModule| <f1> reprlib",shape="record"];
-	"sre_compile" [label="<f0> SourceModule| <f1> sre_compile",shape="record"];
 	"warnings" [label="<f0> SourceModule| <f1> warnings",shape="record"];
 	"tracemalloc" [label="<f0> SourceModule| <f1> tracemalloc",shape="record"];
 	"_tracemalloc" [label="<f0> BuiltinModule| <f1> _tracemalloc",shape="record"];
-	"os" [label="<f0> SourceModule| <f1> os",shape="record"];
 	"re" [label="<f0> SourceModule| <f1> re",shape="record"];
-	"types" [label="<f0> SourceModule| <f1> types",shape="record"];
-	"operator" [label="<f0> SourceModule| <f1> operator",shape="record"];
-	"_collections_abc" [label="<f0> SourceModule| <f1> _collections_abc",shape="record"];
-	"collections.abc" [label="<f0> SourceModule| <f1> collections.abc",shape="record"];
-	"collections" [label="<f0> Package| <f1> collections",shape="record"];
-	"stat" [label="<f0> SourceModule| <f1> stat",shape="record"];
-	"_stat" [label="<f0> BuiltinModule| <f1> _stat",shape="record"];
+	"_bootlocale" [label="<f0> SourceModule| <f1> _bootlocale",shape="record"];
 	"encodings.zlib_codec" [label="<f0> SourceModule| <f1> encodings.zlib_codec",shape="record"];
 	"encodings.uu_codec" [label="<f0> SourceModule| <f1> encodings.uu_codec",shape="record"];
 	"encodings.utf_8_sig" [label="<f0> SourceModule| <f1> encodings.utf_8_sig",shape="record"];
@@ -1320,121 +1335,54 @@ charset="UTF-8";
 	"_codecs_hk" [label="<f0> BuiltinModule| <f1> _codecs_hk",shape="record"];
 	"encodings.big5" [label="<f0> SourceModule| <f1> encodings.big5",shape="record"];
 	"encodings.base64_codec" [label="<f0> SourceModule| <f1> encodings.base64_codec",shape="record"];
-	"encodings.ascii" [label="<f0> SourceModule| <f1> encodings.ascii",shape="record"];
-	"encodings.aliases" [label="<f0> SourceModule| <f1> encodings.aliases",shape="record"];
-	"encodings" [label="<f0> Package| <f1> encodings",shape="record"];
-	"sre_parse" [label="<f0> SourceModule| <f1> sre_parse",shape="record"];
-	"linecache" [label="<f0> SourceModule| <f1> linecache",shape="record"];
-	"genericpath" [label="<f0> SourceModule| <f1> genericpath",shape="record"];
-	"io" [label="<f0> SourceModule| <f1> io",shape="record"];
-	"copyreg" [label="<f0> SourceModule| <f1> copyreg",shape="record"];
-	"posixpath" [label="<f0> SourceModule| <f1> posixpath",shape="record"];
-	"weakref" [label="<f0> SourceModule| <f1> weakref",shape="record"];
-	"locale" [label="<f0> SourceModule| <f1> locale",shape="record"];
-	"enum" [label="<f0> SourceModule| <f1> enum",shape="record"];
-	"heapq" [label="<f0> SourceModule| <f1> heapq",shape="record"];
-	"_heapq" [label="<f0> BuiltinModule| <f1> _heapq",shape="record"];
-	"keyword" [label="<f0> SourceModule| <f1> keyword",shape="record"];
-	"_weakrefset" [label="<f0> SourceModule| <f1> _weakrefset",shape="record"];
-	"sre_constants" [label="<f0> SourceModule| <f1> sre_constants",shape="record"];
-	"traceback" [label="<f0> SourceModule| <f1> traceback",shape="record"];
+	"_sre" [label="<f0> BuiltinModule| <f1> _sre",shape="record"];
 	"_posixsubprocess" [label="<f0> MissingModule| <f1> _posixsubprocess",shape="record"];
-	"ntpath" [label="<f0> SourceModule| <f1> ntpath",shape="record"];
 	"_pickle" [label="<f0> BuiltinModule| <f1> _pickle",shape="record"];
+	"gc" [label="<f0> BuiltinModule| <f1> gc",shape="record"];
 	"datetime" [label="<f0> SourceModule| <f1> datetime",shape="record"];
 	"_strptime" [label="<f0> SourceModule| <f1> _strptime",shape="record"];
 	"_datetime" [label="<f0> BuiltinModule| <f1> _datetime",shape="record"];
-	"codecs" [label="<f0> SourceModule| <f1> codecs",shape="record"];
-	"_codecs" [label="<f0> BuiltinModule| <f1> _codecs",shape="record"];
 	"time" [label="<f0> BuiltinModule| <f1> time",shape="record"];
-	"gc" [label="<f0> BuiltinModule| <f1> gc",shape="record"];
-	"_sre" [label="<f0> BuiltinModule| <f1> _sre",shape="record"];
+	"ntpath" [label="<f0> SourceModule| <f1> ntpath",shape="record"];
 	"posix" [label="<f0> MissingModule| <f1> posix",shape="record"];
 	"resource" [label="<f0> MissingModule| <f1> resource",shape="record"];
-	subgraph "cluster_ctypes" {
-		label="ctypes";
-		"ctypes" -> "ctypes._endian" [style="dotted"];
-		"ctypes" -> "ctypes.wintypes" [style="dotted"];
-		"ctypes" -> "ctypes.util" [style="dotted"];
-		"ctypes" -> "ctypes._aix" [style="dotted"];
-		"ctypes" -> "ctypes.macholib" [style="dotted"];
+	"encodings.ascii" [label="<f0> SourceModule| <f1> encodings.ascii",shape="record"];
+	"encodings.aliases" [label="<f0> SourceModule| <f1> encodings.aliases",shape="record"];
+	"encodings" [label="<f0> Package| <f1> encodings",shape="record"];
+	"codecs" [label="<f0> SourceModule| <f1> codecs",shape="record"];
+	"_codecs" [label="<f0> BuiltinModule| <f1> _codecs",shape="record"];
+	subgraph "cluster_sqlite3" {
+		label="sqlite3";
+		"sqlite3" -> "sqlite3.dbapi2" [style="dotted"];
+		"sqlite3" -> "sqlite3.dump" [style="dotted"];
 	}
-	subgraph "cluster__pyi_rth_utils" {
-		label="_pyi_rth_utils";
-		"_pyi_rth_utils" -> "_pyi_rth_utils.qt" [style="dotted"];
+	subgraph "cluster_openpyxl.comments" {
+		label="openpyxl.comments";
+		"openpyxl.comments" -> "openpyxl.comments.comments" [style="dotted"];
+		"openpyxl.comments" -> "openpyxl.comments.comment_sheet" [style="dotted"];
+		"openpyxl.comments" -> "openpyxl.comments.author" [style="dotted"];
+		"openpyxl.comments" -> "openpyxl.comments.shape_writer" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.utils" {
-		label="openpyxl.utils";
-		"openpyxl.utils" -> "openpyxl.utils.cell" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.formulas" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.exceptions" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.indexed_list" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.datetime" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.protection" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.units" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.bound_dictionary" [style="dotted"];
-		"openpyxl.utils" -> "openpyxl.utils.escape" [style="dotted"];
+	subgraph "cluster_et_xmlfile" {
+		label="et_xmlfile";
+		"et_xmlfile" -> "et_xmlfile.incremental_tree" [style="dotted"];
+		"et_xmlfile" -> "et_xmlfile.xmlfile" [style="dotted"];
 	}
 	subgraph "cluster_pandas.api.extensions" {
 		label="pandas.api.extensions";
 	}
-	subgraph "cluster_pandas.core.arrays" {
-		label="pandas.core.arrays";
-		"pandas.core.arrays" -> "pandas.core.arrays.datetimelike" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.arrow" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.base" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.boolean" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.categorical" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.datetimes" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.floating" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.integer" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.interval" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.masked" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.numpy_" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.period" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.sparse" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.string_" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.string_arrow" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.timedeltas" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays._mixins" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays.numeric" [style="dotted"];
-		"pandas.core.arrays" -> "pandas.core.arrays._ranges" [style="dotted"];
+	subgraph "cluster_packaging.licenses" {
+		label="packaging.licenses";
+		"packaging.licenses" -> "packaging.licenses._spdx" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.packaging" {
-		label="openpyxl.packaging";
-		"openpyxl.packaging" -> "openpyxl.packaging.core" [style="dotted"];
-		"openpyxl.packaging" -> "openpyxl.packaging.manifest" [style="dotted"];
-		"openpyxl.packaging" -> "openpyxl.packaging.relationship" [style="dotted"];
-		"openpyxl.packaging" -> "openpyxl.packaging.workbook" [style="dotted"];
-		"openpyxl.packaging" -> "openpyxl.packaging.extended" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.writer" {
-		label="openpyxl.writer";
-		"openpyxl.writer" -> "openpyxl.writer.excel" [style="dotted"];
-		"openpyxl.writer" -> "openpyxl.writer.theme" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core._numba.kernels" {
-		label="pandas.core._numba.kernels";
-		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.mean_" [style="dotted"];
-		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.min_max_" [style="dotted"];
-		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.sum_" [style="dotted"];
-		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.var_" [style="dotted"];
-		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.shared" [style="dotted"];
-	}
-	subgraph "cluster_numpy.compat" {
-		label="numpy.compat";
-		"numpy.compat" -> "numpy.compat._inspect" [style="dotted"];
-		"numpy.compat" -> "numpy.compat.py3k" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.xml" {
-		label="openpyxl.xml";
-		"openpyxl.xml" -> "openpyxl.xml.constants" [style="dotted"];
-		"openpyxl.xml" -> "openpyxl.xml.functions" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core._numba" {
-		label="pandas.core._numba";
-		"pandas.core._numba" -> "pandas.core._numba.executor" [style="dotted"];
-		"pandas.core._numba" -> "pandas.core._numba.kernels" [style="dotted"];
+	subgraph "cluster_pandas.io.sas" {
+		label="pandas.io.sas";
+		"pandas.io.sas" -> "pandas.io.sas.sasreader" [style="dotted"];
+		"pandas.io.sas" -> "pandas.io.sas.sas_xport" [style="dotted"];
+		"pandas.io.sas" -> "pandas.io.sas.sas7bdat" [style="dotted"];
+		"pandas.io.sas" -> "pandas.io.sas._byteswap" [style="dotted"];
+		"pandas.io.sas" -> "pandas.io.sas._sas" [style="dotted"];
+		"pandas.io.sas" -> "pandas.io.sas.sas_constants" [style="dotted"];
 	}
 	subgraph "cluster_pandas.core.arrays.arrow" {
 		label="pandas.core.arrays.arrow";
@@ -1443,37 +1391,30 @@ charset="UTF-8";
 		"pandas.core.arrays.arrow" -> "pandas.core.arrays.arrow._arrow_utils" [style="dotted"];
 		"pandas.core.arrays.arrow" -> "pandas.core.arrays.arrow.extension_types" [style="dotted"];
 	}
-	subgraph "cluster_numpy.matrixlib" {
-		label="numpy.matrixlib";
-		"numpy.matrixlib" -> "numpy.matrixlib.defmatrix" [style="dotted"];
+	subgraph "cluster_pkg_resources" {
+		label="pkg_resources";
+		"pkg_resources" -> "pkg_resources.extern" [style="dotted"];
+		"pkg_resources" -> "pkg_resources._vendor" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.worksheet" {
-		label="openpyxl.worksheet";
-		"openpyxl.worksheet" -> "openpyxl.worksheet._read_only" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet._reader" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.table" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.worksheet" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.datavalidation" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.page" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.dimensions" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.protection" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.filters" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.views" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.cell_range" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.merge" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.properties" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.pagebreak" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.scenario" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.hyperlink" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.header_footer" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.related" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.drawing" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet._write_only" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet.copier" [style="dotted"];
-		"openpyxl.worksheet" -> "openpyxl.worksheet._writer" [style="dotted"];
+	subgraph "cluster_collections" {
+		label="collections";
+		"collections" -> "collections.Mapping" [style="dotted"];
+		"collections" -> "collections.Iterable" [style="dotted"];
+		"collections" -> "collections.MutableMapping" [style="dotted"];
+		"collections" -> "collections.abc" [style="dotted"];
 	}
-	subgraph "cluster_pandas.util.version" {
-		label="pandas.util.version";
+	subgraph "cluster_numpy.linalg" {
+		label="numpy.linalg";
+		"numpy.linalg" -> "numpy.linalg.lapack_lite" [style="dotted"];
+		"numpy.linalg" -> "numpy.linalg._umath_linalg" [style="dotted"];
+		"numpy.linalg" -> "numpy.linalg.linalg" [style="dotted"];
+	}
+	subgraph "cluster_pytz" {
+		label="pytz";
+		"pytz" -> "pytz.exceptions" [style="dotted"];
+		"pytz" -> "pytz.lazy" [style="dotted"];
+		"pytz" -> "pytz.tzinfo" [style="dotted"];
+		"pytz" -> "pytz.tzfile" [style="dotted"];
 	}
 	subgraph "cluster_openpyxl.chartsheet" {
 		label="openpyxl.chartsheet";
@@ -1485,188 +1426,158 @@ charset="UTF-8";
 		"openpyxl.chartsheet" -> "openpyxl.chartsheet.custom" [style="dotted"];
 		"openpyxl.chartsheet" -> "openpyxl.chartsheet.publish" [style="dotted"];
 	}
-	subgraph "cluster_numpy.typing" {
-		label="numpy.typing";
-		"numpy.typing" -> "numpy.typing._nbit" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._char_codes" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._scalars" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._shape" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._dtype_like" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._array_like" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._generic_alias" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._ufunc" [style="dotted"];
-		"numpy.typing" -> "numpy.typing._add_docstring" [style="dotted"];
+	subgraph "cluster_pandas.errors" {
+		label="pandas.errors";
 	}
-	subgraph "cluster_pandas.core" {
-		label="pandas.core";
-		"pandas.core" -> "pandas.core.roperator" [style="dotted"];
-		"pandas.core" -> "pandas.core.algorithms" [style="dotted"];
-		"pandas.core" -> "pandas.core.arraylike" [style="dotted"];
-		"pandas.core" -> "pandas.core.ops" [style="dotted"];
-		"pandas.core" -> "pandas.core.missing" [style="dotted"];
-		"pandas.core" -> "pandas.core.nanops" [style="dotted"];
-		"pandas.core" -> "pandas.core.indexing" [style="dotted"];
-		"pandas.core" -> "pandas.core.sample" [style="dotted"];
-		"pandas.core" -> "pandas.core.config_init" [style="dotted"];
-		"pandas.core" -> "pandas.core.api" [style="dotted"];
-		"pandas.core" -> "pandas.core.util" [style="dotted"];
-		"pandas.core" -> "pandas.core.generic" [style="dotted"];
-		"pandas.core" -> "pandas.core.common" [style="dotted"];
-		"pandas.core" -> "pandas.core.arrays" [style="dotted"];
-		"pandas.core" -> "pandas.core.base" [style="dotted"];
-		"pandas.core" -> "pandas.core.construction" [style="dotted"];
-		"pandas.core" -> "pandas.core.flags" [style="dotted"];
-		"pandas.core" -> "pandas.core.internals" [style="dotted"];
-		"pandas.core" -> "pandas.core.shared_docs" [style="dotted"];
-		"pandas.core" -> "pandas.core.sorting" [style="dotted"];
-		"pandas.core" -> "pandas.core.window" [style="dotted"];
-		"pandas.core" -> "pandas.core.frame" [style="dotted"];
-		"pandas.core" -> "pandas.core.resample" [style="dotted"];
-		"pandas.core" -> "pandas.core.series" [style="dotted"];
-		"pandas.core" -> "pandas.core.tools" [style="dotted"];
-		"pandas.core" -> "pandas.core.indexers" [style="dotted"];
-		"pandas.core" -> "pandas.core.array_algos" [style="dotted"];
-		"pandas.core" -> "pandas.core.strings" [style="dotted"];
-		"pandas.core" -> "pandas.core.dtypes" [style="dotted"];
-		"pandas.core" -> "pandas.core.accessor" [style="dotted"];
-		"pandas.core" -> "pandas.core.indexes" [style="dotted"];
-		"pandas.core" -> "pandas.core.reshape" [style="dotted"];
-		"pandas.core" -> "pandas.core.groupby" [style="dotted"];
-		"pandas.core" -> "pandas.core.computation" [style="dotted"];
-		"pandas.core" -> "pandas.core._numba" [style="dotted"];
-		"pandas.core" -> "pandas.core.apply" [style="dotted"];
-		"pandas.core" -> "pandas.core.methods" [style="dotted"];
-		"pandas.core" -> "pandas.core.interchange" [style="dotted"];
+	subgraph "cluster_pandas" {
+		label="pandas";
+		"pandas" -> "pandas.compat" [style="dotted"];
+		"pandas" -> "pandas._libs" [style="dotted"];
+		"pandas" -> "pandas._config" [style="dotted"];
+		"pandas" -> "pandas.tseries" [style="dotted"];
+		"pandas" -> "pandas.api" [style="dotted"];
+		"pandas" -> "pandas.arrays" [style="dotted"];
+		"pandas" -> "pandas.errors" [style="dotted"];
+		"pandas" -> "pandas.io" [style="dotted"];
+		"pandas" -> "pandas.plotting" [style="dotted"];
+		"pandas" -> "pandas.testing" [style="dotted"];
+		"pandas" -> "pandas._version" [style="dotted"];
+		"pandas" -> "pandas.core" [style="dotted"];
+		"pandas" -> "pandas.util" [style="dotted"];
+		"pandas" -> "pandas._typing" [style="dotted"];
+		"pandas" -> "pandas._testing" [style="dotted"];
 	}
-	subgraph "cluster_pandas.io" {
-		label="pandas.io";
-		"pandas.io" -> "pandas.io.formats" [style="dotted"];
-		"pandas.io" -> "pandas.io.json" [style="dotted"];
-		"pandas.io" -> "pandas.io.stata" [style="dotted"];
-		"pandas.io" -> "pandas.io.sql" [style="dotted"];
-		"pandas.io" -> "pandas.io.clipboards" [style="dotted"];
-		"pandas.io" -> "pandas.io.gbq" [style="dotted"];
-		"pandas.io" -> "pandas.io.api" [style="dotted"];
-		"pandas.io" -> "pandas.io.pytables" [style="dotted"];
-		"pandas.io" -> "pandas.io.pickle" [style="dotted"];
-		"pandas.io" -> "pandas.io._util" [style="dotted"];
-		"pandas.io" -> "pandas.io.clipboard" [style="dotted"];
-		"pandas.io" -> "pandas.io.parsers" [style="dotted"];
-		"pandas.io" -> "pandas.io.common" [style="dotted"];
-		"pandas.io" -> "pandas.io.excel" [style="dotted"];
-		"pandas.io" -> "pandas.io.feather_format" [style="dotted"];
-		"pandas.io" -> "pandas.io.parquet" [style="dotted"];
-		"pandas.io" -> "pandas.io.orc" [style="dotted"];
-		"pandas.io" -> "pandas.io.xml" [style="dotted"];
-		"pandas.io" -> "pandas.io.html" [style="dotted"];
-		"pandas.io" -> "pandas.io.sas" [style="dotted"];
-		"pandas.io" -> "pandas.io.spss" [style="dotted"];
+	subgraph "cluster_pandas.arrays" {
+		label="pandas.arrays";
 	}
-	subgraph "cluster_pandas.core.computation" {
-		label="pandas.core.computation";
-		"pandas.core.computation" -> "pandas.core.computation.expressions" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.expr" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.api" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.parsing" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.check" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.ops" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.scope" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.common" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.eval" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.engines" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.align" [style="dotted"];
-		"pandas.core.computation" -> "pandas.core.computation.pytables" [style="dotted"];
+	subgraph "cluster_xml.parsers" {
+		label="xml.parsers";
+		"xml.parsers" -> "xml.parsers.expat" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.styles" {
-		label="openpyxl.styles";
-		"openpyxl.styles" -> "openpyxl.styles.alignment" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.borders" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.colors" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.fills" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.fonts" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.numbers" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.protection" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.named_styles" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.stylesheet" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.cell_style" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.styleable" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.proxy" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.builtins" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.differential" [style="dotted"];
-		"openpyxl.styles" -> "openpyxl.styles.table" [style="dotted"];
+	subgraph "cluster_pandas.io.parsers" {
+		label="pandas.io.parsers";
+		"pandas.io.parsers" -> "pandas.io.parsers.readers" [style="dotted"];
+		"pandas.io.parsers" -> "pandas.io.parsers.arrow_parser_wrapper" [style="dotted"];
+		"pandas.io.parsers" -> "pandas.io.parsers.base_parser" [style="dotted"];
+		"pandas.io.parsers" -> "pandas.io.parsers.c_parser_wrapper" [style="dotted"];
+		"pandas.io.parsers" -> "pandas.io.parsers.python_parser" [style="dotted"];
 	}
-	subgraph "cluster_pandas.compat" {
-		label="pandas.compat";
-		"pandas.compat" -> "pandas.compat._constants" [style="dotted"];
-		"pandas.compat" -> "pandas.compat.compressors" [style="dotted"];
-		"pandas.compat" -> "pandas.compat.numpy" [style="dotted"];
-		"pandas.compat" -> "pandas.compat.pyarrow" [style="dotted"];
-		"pandas.compat" -> "pandas.compat._optional" [style="dotted"];
-		"pandas.compat" -> "pandas.compat.pickle_compat" [style="dotted"];
+	subgraph "cluster_pandas.api.indexers" {
+		label="pandas.api.indexers";
 	}
-	subgraph "cluster_pandas.core.interchange" {
-		label="pandas.core.interchange";
-		"pandas.core.interchange" -> "pandas.core.interchange.dataframe_protocol" [style="dotted"];
-		"pandas.core.interchange" -> "pandas.core.interchange.dataframe" [style="dotted"];
-		"pandas.core.interchange" -> "pandas.core.interchange.column" [style="dotted"];
-		"pandas.core.interchange" -> "pandas.core.interchange.buffer" [style="dotted"];
-		"pandas.core.interchange" -> "pandas.core.interchange.utils" [style="dotted"];
-		"pandas.core.interchange" -> "pandas.core.interchange.from_dataframe" [style="dotted"];
+	subgraph "cluster_pandas.core.array_algos" {
+		label="pandas.core.array_algos";
+		"pandas.core.array_algos" -> "pandas.core.array_algos.masked_reductions" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.masked_accumulations" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.datetimelike_accumulations" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.replace" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.quantile" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.transforms" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.putmask" [style="dotted"];
+		"pandas.core.array_algos" -> "pandas.core.array_algos.take" [style="dotted"];
 	}
-	subgraph "cluster_pkg_resources._vendor" {
-		label="pkg_resources._vendor";
-		"pkg_resources._vendor" -> "pkg_resources._vendor.appdirs" [style="dotted"];
-		"pkg_resources._vendor" -> "pkg_resources._vendor.pyparsing" [style="dotted"];
-		"pkg_resources._vendor" -> "pkg_resources._vendor.packaging" [style="dotted"];
+	subgraph "cluster_pandas.tseries" {
+		label="pandas.tseries";
+		"pandas.tseries" -> "pandas.tseries.frequencies" [style="dotted"];
+		"pandas.tseries" -> "pandas.tseries.offsets" [style="dotted"];
+		"pandas.tseries" -> "pandas.tseries.api" [style="dotted"];
 	}
-	subgraph "cluster_pandas.io.formats" {
-		label="pandas.io.formats";
-		"pandas.io.formats" -> "pandas.io.formats.style" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.format" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.printing" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.excel" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.console" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.style_render" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats._color_data" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.css" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.info" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.xml" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.latex" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.html" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.string" [style="dotted"];
-		"pandas.io.formats" -> "pandas.io.formats.csvs" [style="dotted"];
+	subgraph "cluster_pandas.core.groupby" {
+		label="pandas.core.groupby";
+		"pandas.core.groupby" -> "pandas.core.groupby.base" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.grouper" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.ops" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.numba_" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.generic" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.groupby" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.indexing" [style="dotted"];
+		"pandas.core.groupby" -> "pandas.core.groupby.categorical" [style="dotted"];
 	}
-	subgraph "cluster_importlib" {
-		label="importlib";
-		"importlib" -> "importlib._bootstrap" [style="dotted"];
-		"importlib" -> "importlib._bootstrap_external" [style="dotted"];
-		"importlib" -> "importlib.machinery" [style="dotted"];
-		"importlib" -> "importlib.util" [style="dotted"];
-		"importlib" -> "importlib.metadata" [style="dotted"];
-		"importlib" -> "importlib.abc" [style="dotted"];
+	subgraph "cluster_bcrypt" {
+		label="bcrypt";
+		"bcrypt" -> "bcrypt._bcrypt" [style="dotted"];
+		"bcrypt" -> "bcrypt.__about__" [style="dotted"];
 	}
-	subgraph "cluster_six.moves" {
-		label="six.moves";
-		"six.moves" -> "six.moves._thread" [style="dotted"];
-		"six.moves" -> "six.moves.winreg" [style="dotted"];
-		"six.moves" -> "six.moves.range" [style="dotted"];
+	subgraph "cluster_xmlrpc" {
+		label="xmlrpc";
+		"xmlrpc" -> "xmlrpc.client" [style="dotted"];
 	}
-	subgraph "cluster_pandas.core.methods" {
-		label="pandas.core.methods";
-		"pandas.core.methods" -> "pandas.core.methods.selectn" [style="dotted"];
-		"pandas.core.methods" -> "pandas.core.methods.describe" [style="dotted"];
-		"pandas.core.methods" -> "pandas.core.methods.to_dict" [style="dotted"];
+	subgraph "cluster_pandas.api" {
+		label="pandas.api";
+		"pandas.api" -> "pandas.api.extensions" [style="dotted"];
+		"pandas.api" -> "pandas.api.indexers" [style="dotted"];
+		"pandas.api" -> "pandas.api.interchange" [style="dotted"];
+		"pandas.api" -> "pandas.api.types" [style="dotted"];
 	}
-	subgraph "cluster_pandas.api.types" {
-		label="pandas.api.types";
+	subgraph "cluster_xml" {
+		label="xml";
+		"xml" -> "xml.etree" [style="dotted"];
+		"xml" -> "xml.sax" [style="dotted"];
+		"xml" -> "xml.parsers" [style="dotted"];
+		"xml" -> "xml.dom" [style="dotted"];
 	}
-	subgraph "cluster_pandas.io.clipboard" {
-		label="pandas.io.clipboard";
+	subgraph "cluster_numpy.testing" {
+		label="numpy.testing";
+		"numpy.testing" -> "numpy.testing._private" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.arrays.sparse" {
+		label="pandas.core.arrays.sparse";
+		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.accessor" [style="dotted"];
+		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.array" [style="dotted"];
+		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.dtype" [style="dotted"];
+		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.scipy_sparse" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.internals" {
+		label="pandas.core.internals";
+		"pandas.core.internals" -> "pandas.core.internals.api" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.array_manager" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.base" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.blocks" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.concat" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.managers" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.construction" [style="dotted"];
+		"pandas.core.internals" -> "pandas.core.internals.ops" [style="dotted"];
+	}
+	subgraph "cluster_dateutil.zoneinfo" {
+		label="dateutil.zoneinfo";
+	}
+	subgraph "cluster_http" {
+		label="http";
+		"http" -> "http.client" [style="dotted"];
+		"http" -> "http.cookiejar" [style="dotted"];
+		"http" -> "http.server" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core._numba" {
+		label="pandas.core._numba";
+		"pandas.core._numba" -> "pandas.core._numba.executor" [style="dotted"];
+		"pandas.core._numba" -> "pandas.core._numba.kernels" [style="dotted"];
 	}
 	subgraph "cluster_pandas.plotting" {
 		label="pandas.plotting";
 		"pandas.plotting" -> "pandas.plotting._core" [style="dotted"];
 		"pandas.plotting" -> "pandas.plotting._misc" [style="dotted"];
+	}
+	subgraph "cluster_email" {
+		label="email";
+		"email" -> "email.errors" [style="dotted"];
+		"email" -> "email.charset" [style="dotted"];
+		"email" -> "email.header" [style="dotted"];
+		"email" -> "email._header_value_parser" [style="dotted"];
+		"email" -> "email.parser" [style="dotted"];
+		"email" -> "email.feedparser" [style="dotted"];
+		"email" -> "email._policybase" [style="dotted"];
+		"email" -> "email.utils" [style="dotted"];
+		"email" -> "email._parseaddr" [style="dotted"];
+		"email" -> "email.message" [style="dotted"];
+		"email" -> "email._encoded_words" [style="dotted"];
+		"email" -> "email.generator" [style="dotted"];
+		"email" -> "email.iterators" [style="dotted"];
+		"email" -> "email.policy" [style="dotted"];
+		"email" -> "email.headerregistry" [style="dotted"];
+		"email" -> "email.contentmanager" [style="dotted"];
+		"email" -> "email.quoprimime" [style="dotted"];
+		"email" -> "email.base64mime" [style="dotted"];
+		"email" -> "email.encoders" [style="dotted"];
 	}
 	subgraph "cluster_pandas.io.json" {
 		label="pandas.io.json";
@@ -1674,65 +1585,73 @@ charset="UTF-8";
 		"pandas.io.json" -> "pandas.io.json._table_schema" [style="dotted"];
 		"pandas.io.json" -> "pandas.io.json._normalize" [style="dotted"];
 	}
-	subgraph "cluster_pydoc_data" {
-		label="pydoc_data";
-		"pydoc_data" -> "pydoc_data.topics" [style="dotted"];
+	subgraph "cluster_openpyxl.xml" {
+		label="openpyxl.xml";
+		"openpyxl.xml" -> "openpyxl.xml.constants" [style="dotted"];
+		"openpyxl.xml" -> "openpyxl.xml.functions" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.pivot" {
-		label="openpyxl.pivot";
-		"openpyxl.pivot" -> "openpyxl.pivot.table" [style="dotted"];
-		"openpyxl.pivot" -> "openpyxl.pivot.cache" [style="dotted"];
-		"openpyxl.pivot" -> "openpyxl.pivot.record" [style="dotted"];
-		"openpyxl.pivot" -> "openpyxl.pivot.fields" [style="dotted"];
+	subgraph "cluster_dateutil.parser" {
+		label="dateutil.parser";
+		"dateutil.parser" -> "dateutil.parser._parser" [style="dotted"];
+		"dateutil.parser" -> "dateutil.parser.isoparser" [style="dotted"];
 	}
-	subgraph "cluster_pandas.errors" {
-		label="pandas.errors";
+	subgraph "cluster_openpyxl.chart" {
+		label="openpyxl.chart";
+		"openpyxl.chart" -> "openpyxl.chart.area_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.bar_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.bubble_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.line_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.pie_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.radar_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.scatter_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.stock_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.surface_chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.series_factory" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.reference" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.chartspace" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.reader" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.data_source" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.series" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.shapes" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.error_bar" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.label" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.marker" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.trendline" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.text" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.layout" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.picture" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart._chart" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart._3d" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.axis" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.descriptors" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.title" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.legend" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.updown_bars" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.plotarea" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.pivot" [style="dotted"];
+		"openpyxl.chart" -> "openpyxl.chart.print_settings" [style="dotted"];
 	}
-	subgraph "cluster_pandas.core.reshape" {
-		label="pandas.core.reshape";
-		"pandas.core.reshape" -> "pandas.core.reshape.api" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.concat" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.merge" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.tile" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.util" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.reshape" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.melt" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.pivot" [style="dotted"];
-		"pandas.core.reshape" -> "pandas.core.reshape.encoding" [style="dotted"];
+	subgraph "cluster_html" {
+		label="html";
+		"html" -> "html.entities" [style="dotted"];
 	}
-	subgraph "cluster_pandas.api.indexers" {
-		label="pandas.api.indexers";
+	subgraph "cluster_urllib" {
+		label="urllib";
+		"urllib" -> "urllib.parse" [style="dotted"];
+		"urllib" -> "urllib.request" [style="dotted"];
+		"urllib" -> "urllib.error" [style="dotted"];
+		"urllib" -> "urllib.response" [style="dotted"];
 	}
-	subgraph "cluster_openpyxl.workbook" {
-		label="openpyxl.workbook";
-		"openpyxl.workbook" -> "openpyxl.workbook.workbook" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.child" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.defined_name" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.external_link" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.external_reference" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.function_group" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.properties" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.protection" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.smart_tags" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.views" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook.web" [style="dotted"];
-		"openpyxl.workbook" -> "openpyxl.workbook._writer" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.util" {
-		label="pandas.core.util";
-		"pandas.core.util" -> "pandas.core.util.hashing" [style="dotted"];
-		"pandas.core.util" -> "pandas.core.util.numba_" [style="dotted"];
-	}
-	subgraph "cluster_numpy.testing" {
-		label="numpy.testing";
-		"numpy.testing" -> "numpy.testing._private" [style="dotted"];
-	}
-	subgraph "cluster_PyQt5" {
-		label="PyQt5";
-		"PyQt5" -> "PyQt5.sip" [style="dotted"];
-		"PyQt5" -> "PyQt5.QtWidgets" [style="dotted"];
-		"PyQt5" -> "PyQt5.QtCore" [style="dotted"];
-		"PyQt5" -> "PyQt5.QtGui" [style="dotted"];
+	subgraph "cluster_pandas.io.excel" {
+		label="pandas.io.excel";
+		"pandas.io.excel" -> "pandas.io.excel._base" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._odswriter" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._openpyxl" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._util" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._xlsxwriter" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._odfreader" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._pyxlsb" [style="dotted"];
+		"pandas.io.excel" -> "pandas.io.excel._xlrd" [style="dotted"];
 	}
 	subgraph "cluster_encodings" {
 		label="encodings";
@@ -1859,149 +1778,157 @@ charset="UTF-8";
 		"encodings" -> "encodings.uu_codec" [style="dotted"];
 		"encodings" -> "encodings.zlib_codec" [style="dotted"];
 	}
-	subgraph "cluster_packaging.licenses" {
-		label="packaging.licenses";
-		"packaging.licenses" -> "packaging.licenses._spdx" [style="dotted"];
+	subgraph "cluster_openpyxl.utils" {
+		label="openpyxl.utils";
+		"openpyxl.utils" -> "openpyxl.utils.cell" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.formulas" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.exceptions" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.indexed_list" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.datetime" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.protection" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.units" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.bound_dictionary" [style="dotted"];
+		"openpyxl.utils" -> "openpyxl.utils.escape" [style="dotted"];
 	}
-	subgraph "cluster_pytz" {
-		label="pytz";
-		"pytz" -> "pytz.exceptions" [style="dotted"];
-		"pytz" -> "pytz.lazy" [style="dotted"];
-		"pytz" -> "pytz.tzinfo" [style="dotted"];
-		"pytz" -> "pytz.tzfile" [style="dotted"];
+	subgraph "cluster_openpyxl" {
+		label="openpyxl";
+		"openpyxl" -> "openpyxl.xml" [style="dotted"];
+		"openpyxl" -> "openpyxl.workbook" [style="dotted"];
+		"openpyxl" -> "openpyxl._constants" [style="dotted"];
+		"openpyxl" -> "openpyxl.compat" [style="dotted"];
+		"openpyxl" -> "openpyxl.reader" [style="dotted"];
+		"openpyxl" -> "openpyxl.tests" [style="dotted"];
+		"openpyxl" -> "openpyxl.chart" [style="dotted"];
+		"openpyxl" -> "openpyxl.utils" [style="dotted"];
+		"openpyxl" -> "openpyxl.worksheet" [style="dotted"];
+		"openpyxl" -> "openpyxl.styles" [style="dotted"];
+		"openpyxl" -> "openpyxl.formula" [style="dotted"];
+		"openpyxl" -> "openpyxl.formatting" [style="dotted"];
+		"openpyxl" -> "openpyxl.descriptors" [style="dotted"];
+		"openpyxl" -> "openpyxl.drawing" [style="dotted"];
+		"openpyxl" -> "openpyxl.chartsheet" [style="dotted"];
+		"openpyxl" -> "openpyxl.packaging" [style="dotted"];
+		"openpyxl" -> "openpyxl.pivot" [style="dotted"];
+		"openpyxl" -> "openpyxl.comments" [style="dotted"];
+		"openpyxl" -> "openpyxl.cell" [style="dotted"];
+		"openpyxl" -> "openpyxl.writer" [style="dotted"];
 	}
-	subgraph "cluster_numpy.polynomial" {
-		label="numpy.polynomial";
-		"numpy.polynomial" -> "numpy.polynomial.polyutils" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.polynomial" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.chebyshev" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.legendre" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.hermite" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.hermite_e" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial.laguerre" [style="dotted"];
-		"numpy.polynomial" -> "numpy.polynomial._polybase" [style="dotted"];
+	subgraph "cluster_pydoc_data" {
+		label="pydoc_data";
+		"pydoc_data" -> "pydoc_data.topics" [style="dotted"];
 	}
-	subgraph "cluster_dateutil.zoneinfo" {
-		label="dateutil.zoneinfo";
+	subgraph "cluster_pandas._libs" {
+		label="pandas._libs";
+		"pandas._libs" -> "pandas._libs.interval" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.tslibs" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.missing" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.lib" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.algos" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.index" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.reduction" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.tslib" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.reshape" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.writers" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.json" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.hashtable" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.arrays" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.groupby" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.hashing" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.indexing" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.internals" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.join" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.ops" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.ops_dispatch" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.parsers" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.properties" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.sparse" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.testing" [style="dotted"];
+		"pandas._libs" -> "pandas._libs.window" [style="dotted"];
 	}
-	subgraph "cluster_email" {
-		label="email";
-		"email" -> "email.errors" [style="dotted"];
-		"email" -> "email.charset" [style="dotted"];
-		"email" -> "email.header" [style="dotted"];
-		"email" -> "email._header_value_parser" [style="dotted"];
-		"email" -> "email.parser" [style="dotted"];
-		"email" -> "email.feedparser" [style="dotted"];
-		"email" -> "email._policybase" [style="dotted"];
-		"email" -> "email.utils" [style="dotted"];
-		"email" -> "email._parseaddr" [style="dotted"];
-		"email" -> "email.message" [style="dotted"];
-		"email" -> "email._encoded_words" [style="dotted"];
-		"email" -> "email.generator" [style="dotted"];
-		"email" -> "email.iterators" [style="dotted"];
-		"email" -> "email.policy" [style="dotted"];
-		"email" -> "email.headerregistry" [style="dotted"];
-		"email" -> "email.contentmanager" [style="dotted"];
-		"email" -> "email.quoprimime" [style="dotted"];
-		"email" -> "email.base64mime" [style="dotted"];
-		"email" -> "email.encoders" [style="dotted"];
+	subgraph "cluster_numpy.ma" {
+		label="numpy.ma";
+		"numpy.ma" -> "numpy.ma.core" [style="dotted"];
+		"numpy.ma" -> "numpy.ma.extras" [style="dotted"];
+		"numpy.ma" -> "numpy.ma.mrecords" [style="dotted"];
 	}
-	subgraph "cluster_pandas.util" {
-		label="pandas.util";
-		"pandas.util" -> "pandas.util._decorators" [style="dotted"];
-		"pandas.util" -> "pandas.util._print_versions" [style="dotted"];
-		"pandas.util" -> "pandas.util._tester" [style="dotted"];
-		"pandas.util" -> "pandas.util._exceptions" [style="dotted"];
-		"pandas.util" -> "pandas.util._validators" [style="dotted"];
-		"pandas.util" -> "pandas.util._str_methods" [style="dotted"];
-		"pandas.util" -> "pandas.util.version" [style="dotted"];
+	subgraph "cluster_PyQt5" {
+		label="PyQt5";
+		"PyQt5" -> "PyQt5.sip" [style="dotted"];
+		"PyQt5" -> "PyQt5.QtWidgets" [style="dotted"];
+		"PyQt5" -> "PyQt5.QtCore" [style="dotted"];
+		"PyQt5" -> "PyQt5.QtGui" [style="dotted"];
 	}
-	subgraph "cluster_numpy" {
-		label="numpy";
-		"numpy" -> "numpy._globals" [style="dotted"];
-		"numpy" -> "numpy.histogramdd" [style="dotted"];
-		"numpy" -> "numpy.ndarray" [style="dotted"];
-		"numpy" -> "numpy.amax" [style="dotted"];
-		"numpy" -> "numpy.amin" [style="dotted"];
-		"numpy" -> "numpy.iscomplexobj" [style="dotted"];
-		"numpy" -> "numpy.bool_" [style="dotted"];
-		"numpy" -> "numpy.array" [style="dotted"];
-		"numpy" -> "numpy.expand_dims" [style="dotted"];
-		"numpy" -> "numpy.dtype" [style="dotted"];
-		"numpy" -> "numpy.recarray" [style="dotted"];
-		"numpy" -> "numpy.eye" [style="dotted"];
-		"numpy" -> "numpy.__config__" [style="dotted"];
-		"numpy" -> "numpy._version" [style="dotted"];
-		"numpy" -> "numpy._distributor_init" [style="dotted"];
-		"numpy" -> "numpy.core" [style="dotted"];
-		"numpy" -> "numpy.compat" [style="dotted"];
-		"numpy" -> "numpy.lib" [style="dotted"];
-		"numpy" -> "numpy.linalg" [style="dotted"];
-		"numpy" -> "numpy.fft" [style="dotted"];
-		"numpy" -> "numpy.polynomial" [style="dotted"];
-		"numpy" -> "numpy.random" [style="dotted"];
-		"numpy" -> "numpy.ctypeslib" [style="dotted"];
-		"numpy" -> "numpy.ma" [style="dotted"];
-		"numpy" -> "numpy.matrixlib" [style="dotted"];
-		"numpy" -> "numpy.testing" [style="dotted"];
-		"numpy" -> "numpy._pytesttester" [style="dotted"];
-		"numpy" -> "numpy.unsignedinteger" [style="dotted"];
-		"numpy" -> "numpy.floating" [style="dotted"];
-		"numpy" -> "numpy.complexfloating" [style="dotted"];
-		"numpy" -> "numpy.number" [style="dotted"];
-		"numpy" -> "numpy.timedelta64" [style="dotted"];
-		"numpy" -> "numpy.datetime64" [style="dotted"];
-		"numpy" -> "numpy.object_" [style="dotted"];
-		"numpy" -> "numpy.void" [style="dotted"];
-		"numpy" -> "numpy.str_" [style="dotted"];
-		"numpy" -> "numpy.bytes_" [style="dotted"];
-		"numpy" -> "numpy.distutils" [style="dotted"];
-		"numpy" -> "numpy.version" [style="dotted"];
-		"numpy" -> "numpy.typing" [style="dotted"];
+	subgraph "cluster_openpyxl.packaging" {
+		label="openpyxl.packaging";
+		"openpyxl.packaging" -> "openpyxl.packaging.core" [style="dotted"];
+		"openpyxl.packaging" -> "openpyxl.packaging.manifest" [style="dotted"];
+		"openpyxl.packaging" -> "openpyxl.packaging.relationship" [style="dotted"];
+		"openpyxl.packaging" -> "openpyxl.packaging.workbook" [style="dotted"];
+		"openpyxl.packaging" -> "openpyxl.packaging.extended" [style="dotted"];
 	}
-	subgraph "cluster_pandas.core.internals" {
-		label="pandas.core.internals";
-		"pandas.core.internals" -> "pandas.core.internals.api" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.array_manager" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.base" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.blocks" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.concat" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.managers" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.construction" [style="dotted"];
-		"pandas.core.internals" -> "pandas.core.internals.ops" [style="dotted"];
+	subgraph "cluster_openpyxl.formatting" {
+		label="openpyxl.formatting";
+		"openpyxl.formatting" -> "openpyxl.formatting.rule" [style="dotted"];
+		"openpyxl.formatting" -> "openpyxl.formatting.formatting" [style="dotted"];
 	}
-	subgraph "cluster_pandas.io.sas" {
-		label="pandas.io.sas";
-		"pandas.io.sas" -> "pandas.io.sas.sasreader" [style="dotted"];
-		"pandas.io.sas" -> "pandas.io.sas.sas_xport" [style="dotted"];
-		"pandas.io.sas" -> "pandas.io.sas.sas7bdat" [style="dotted"];
-		"pandas.io.sas" -> "pandas.io.sas._byteswap" [style="dotted"];
-		"pandas.io.sas" -> "pandas.io.sas._sas" [style="dotted"];
-		"pandas.io.sas" -> "pandas.io.sas.sas_constants" [style="dotted"];
+	subgraph "cluster_openpyxl.pivot" {
+		label="openpyxl.pivot";
+		"openpyxl.pivot" -> "openpyxl.pivot.table" [style="dotted"];
+		"openpyxl.pivot" -> "openpyxl.pivot.cache" [style="dotted"];
+		"openpyxl.pivot" -> "openpyxl.pivot.record" [style="dotted"];
+		"openpyxl.pivot" -> "openpyxl.pivot.fields" [style="dotted"];
 	}
-	subgraph "cluster_http" {
-		label="http";
-		"http" -> "http.client" [style="dotted"];
-		"http" -> "http.cookiejar" [style="dotted"];
-		"http" -> "http.server" [style="dotted"];
+	subgraph "cluster_pandas.core.indexers" {
+		label="pandas.core.indexers";
+		"pandas.core.indexers" -> "pandas.core.indexers.utils" [style="dotted"];
+		"pandas.core.indexers" -> "pandas.core.indexers.objects" [style="dotted"];
 	}
-	subgraph "cluster_pkg_resources._vendor.packaging" {
-		label="pkg_resources._vendor.packaging";
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.__about__" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._compat" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._structures" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._typing" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.markers" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.requirements" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.specifiers" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.tags" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.utils" [style="dotted"];
-		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.version" [style="dotted"];
+	subgraph "cluster_openpyxl.worksheet" {
+		label="openpyxl.worksheet";
+		"openpyxl.worksheet" -> "openpyxl.worksheet._read_only" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet._reader" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.table" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.worksheet" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.datavalidation" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.page" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.dimensions" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.protection" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.filters" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.views" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.cell_range" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.merge" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.properties" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.pagebreak" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.scenario" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.hyperlink" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.header_footer" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.related" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.drawing" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet._write_only" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet.copier" [style="dotted"];
+		"openpyxl.worksheet" -> "openpyxl.worksheet._writer" [style="dotted"];
 	}
-	subgraph "cluster_et_xmlfile" {
-		label="et_xmlfile";
-		"et_xmlfile" -> "et_xmlfile.incremental_tree" [style="dotted"];
-		"et_xmlfile" -> "et_xmlfile.xmlfile" [style="dotted"];
+	subgraph "cluster_pandas.core.arrays" {
+		label="pandas.core.arrays";
+		"pandas.core.arrays" -> "pandas.core.arrays.datetimelike" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.arrow" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.base" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.boolean" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.categorical" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.datetimes" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.floating" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.integer" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.interval" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.masked" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.numpy_" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.period" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.sparse" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.string_" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.string_arrow" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.timedeltas" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays._mixins" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays.numeric" [style="dotted"];
+		"pandas.core.arrays" -> "pandas.core.arrays._ranges" [style="dotted"];
 	}
 	subgraph "cluster_xml.sax" {
 		label="xml.sax";
@@ -2011,46 +1938,49 @@ charset="UTF-8";
 		"xml.sax" -> "xml.sax._exceptions" [style="dotted"];
 		"xml.sax" -> "xml.sax.expatreader" [style="dotted"];
 	}
-	subgraph "cluster_pandas" {
-		label="pandas";
-		"pandas" -> "pandas.compat" [style="dotted"];
-		"pandas" -> "pandas._libs" [style="dotted"];
-		"pandas" -> "pandas._config" [style="dotted"];
-		"pandas" -> "pandas.tseries" [style="dotted"];
-		"pandas" -> "pandas.api" [style="dotted"];
-		"pandas" -> "pandas.arrays" [style="dotted"];
-		"pandas" -> "pandas.errors" [style="dotted"];
-		"pandas" -> "pandas.io" [style="dotted"];
-		"pandas" -> "pandas.plotting" [style="dotted"];
-		"pandas" -> "pandas.testing" [style="dotted"];
-		"pandas" -> "pandas._version" [style="dotted"];
-		"pandas" -> "pandas.core" [style="dotted"];
-		"pandas" -> "pandas.util" [style="dotted"];
-		"pandas" -> "pandas._typing" [style="dotted"];
-		"pandas" -> "pandas._testing" [style="dotted"];
+	subgraph "cluster_multiprocessing.dummy" {
+		label="multiprocessing.dummy";
+		"multiprocessing.dummy" -> "multiprocessing.dummy.connection" [style="dotted"];
 	}
-	subgraph "cluster_dateutil" {
-		label="dateutil";
-		"dateutil" -> "dateutil._version" [style="dotted"];
-		"dateutil" -> "dateutil.relativedelta" [style="dotted"];
-		"dateutil" -> "dateutil.easter" [style="dotted"];
-		"dateutil" -> "dateutil.tz" [style="dotted"];
-		"dateutil" -> "dateutil.rrule" [style="dotted"];
-		"dateutil" -> "dateutil.parser" [style="dotted"];
-		"dateutil" -> "dateutil.zoneinfo" [style="dotted"];
-		"dateutil" -> "dateutil._common" [style="dotted"];
+	subgraph "cluster_numpy.matrixlib" {
+		label="numpy.matrixlib";
+		"numpy.matrixlib" -> "numpy.matrixlib.defmatrix" [style="dotted"];
 	}
-	subgraph "cluster_xml.parsers" {
-		label="xml.parsers";
-		"xml.parsers" -> "xml.parsers.expat" [style="dotted"];
+	subgraph "cluster_openpyxl.formula" {
+		label="openpyxl.formula";
+		"openpyxl.formula" -> "openpyxl.formula.tokenizer" [style="dotted"];
+		"openpyxl.formula" -> "openpyxl.formula.translate" [style="dotted"];
 	}
-	subgraph "cluster_dateutil.tz" {
-		label="dateutil.tz";
-		"dateutil.tz" -> "dateutil.tz.tzfile" [style="dotted"];
-		"dateutil.tz" -> "dateutil.tz.tz" [style="dotted"];
-		"dateutil.tz" -> "dateutil.tz._common" [style="dotted"];
-		"dateutil.tz" -> "dateutil.tz._factories" [style="dotted"];
-		"dateutil.tz" -> "dateutil.tz.win" [style="dotted"];
+	subgraph "cluster_numpy.distutils" {
+		label="numpy.distutils";
+		"numpy.distutils" -> "numpy.distutils.cpuinfo" [style="dotted"];
+	}
+	subgraph "cluster_ctypes.macholib" {
+		label="ctypes.macholib";
+		"ctypes.macholib" -> "ctypes.macholib.dyld" [style="dotted"];
+		"ctypes.macholib" -> "ctypes.macholib.framework" [style="dotted"];
+		"ctypes.macholib" -> "ctypes.macholib.dylib" [style="dotted"];
+	}
+	subgraph "cluster_xml.etree" {
+		label="xml.etree";
+		"xml.etree" -> "xml.etree.ElementPath" [style="dotted"];
+		"xml.etree" -> "xml.etree.ElementTree" [style="dotted"];
+		"xml.etree" -> "xml.etree.ElementInclude" [style="dotted"];
+		"xml.etree" -> "xml.etree.cElementTree" [style="dotted"];
+	}
+	subgraph "cluster_distutils" {
+		label="distutils";
+		"distutils" -> "distutils.log" [style="dotted"];
+		"distutils" -> "distutils.sysconfig" [style="dotted"];
+		"distutils" -> "distutils.util" [style="dotted"];
+		"distutils" -> "distutils.errors" [style="dotted"];
+		"distutils" -> "distutils.dep_util" [style="dotted"];
+		"distutils" -> "distutils.spawn" [style="dotted"];
+		"distutils" -> "distutils.dir_util" [style="dotted"];
+		"distutils" -> "distutils.file_util" [style="dotted"];
+		"distutils" -> "distutils.filelist" [style="dotted"];
+		"distutils" -> "distutils.debug" [style="dotted"];
+		"distutils" -> "distutils.text_file" [style="dotted"];
 	}
 	subgraph "cluster_asyncio" {
 		label="asyncio";
@@ -2082,579 +2012,6 @@ charset="UTF-8";
 		"asyncio" -> "asyncio.windows_events" [style="dotted"];
 		"asyncio" -> "asyncio.unix_events" [style="dotted"];
 		"asyncio" -> "asyncio.log" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.ops" {
-		label="pandas.core.ops";
-		"pandas.core.ops" -> "pandas.core.ops.missing" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.array_ops" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.common" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.docstrings" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.invalid" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.mask_ops" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.methods" [style="dotted"];
-		"pandas.core.ops" -> "pandas.core.ops.dispatch" [style="dotted"];
-	}
-	subgraph "cluster_sqlite3" {
-		label="sqlite3";
-		"sqlite3" -> "sqlite3.dbapi2" [style="dotted"];
-		"sqlite3" -> "sqlite3.dump" [style="dotted"];
-	}
-	subgraph "cluster_pandas.api.interchange" {
-		label="pandas.api.interchange";
-	}
-	subgraph "cluster_multiprocessing" {
-		label="multiprocessing";
-		"multiprocessing" -> "multiprocessing.process" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.util" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.AuthenticationError" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.BufferTooShort" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.resource_sharer" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.connection" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.get_start_method" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.set_start_method" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.resource_tracker" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.spawn" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.forkserver" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.reduction" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.get_context" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.TimeoutError" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.pool" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.shared_memory" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.context" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.managers" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.synchronize" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.queues" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.sharedctypes" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.popen_fork" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.popen_spawn_posix" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.popen_forkserver" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.popen_spawn_win32" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.heap" [style="dotted"];
-		"multiprocessing" -> "multiprocessing.dummy" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.formula" {
-		label="openpyxl.formula";
-		"openpyxl.formula" -> "openpyxl.formula.tokenizer" [style="dotted"];
-		"openpyxl.formula" -> "openpyxl.formula.translate" [style="dotted"];
-	}
-	subgraph "cluster_dateutil.parser" {
-		label="dateutil.parser";
-		"dateutil.parser" -> "dateutil.parser._parser" [style="dotted"];
-		"dateutil.parser" -> "dateutil.parser.isoparser" [style="dotted"];
-	}
-	subgraph "cluster_pandas._config" {
-		label="pandas._config";
-		"pandas._config" -> "pandas._config.config" [style="dotted"];
-		"pandas._config" -> "pandas._config.dates" [style="dotted"];
-		"pandas._config" -> "pandas._config.display" [style="dotted"];
-		"pandas._config" -> "pandas._config.localization" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.cell" {
-		label="openpyxl.cell";
-		"openpyxl.cell" -> "openpyxl.cell.cell" [style="dotted"];
-		"openpyxl.cell" -> "openpyxl.cell.read_only" [style="dotted"];
-		"openpyxl.cell" -> "openpyxl.cell.text" [style="dotted"];
-		"openpyxl.cell" -> "openpyxl.cell._writer" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.compat" {
-		label="openpyxl.compat";
-		"openpyxl.compat" -> "openpyxl.compat.numbers" [style="dotted"];
-		"openpyxl.compat" -> "openpyxl.compat.strings" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.workbook.external_link" {
-		label="openpyxl.workbook.external_link";
-		"openpyxl.workbook.external_link" -> "openpyxl.workbook.external_link.external" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.reader" {
-		label="openpyxl.reader";
-		"openpyxl.reader" -> "openpyxl.reader.excel" [style="dotted"];
-		"openpyxl.reader" -> "openpyxl.reader.strings" [style="dotted"];
-		"openpyxl.reader" -> "openpyxl.reader.workbook" [style="dotted"];
-		"openpyxl.reader" -> "openpyxl.reader.drawings" [style="dotted"];
-	}
-	subgraph "cluster_bcrypt" {
-		label="bcrypt";
-		"bcrypt" -> "bcrypt._bcrypt" [style="dotted"];
-		"bcrypt" -> "bcrypt.__about__" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.indexers" {
-		label="pandas.core.indexers";
-		"pandas.core.indexers" -> "pandas.core.indexers.utils" [style="dotted"];
-		"pandas.core.indexers" -> "pandas.core.indexers.objects" [style="dotted"];
-	}
-	subgraph "cluster_pandas.api" {
-		label="pandas.api";
-		"pandas.api" -> "pandas.api.extensions" [style="dotted"];
-		"pandas.api" -> "pandas.api.indexers" [style="dotted"];
-		"pandas.api" -> "pandas.api.interchange" [style="dotted"];
-		"pandas.api" -> "pandas.api.types" [style="dotted"];
-	}
-	subgraph "cluster_concurrent" {
-		label="concurrent";
-		"concurrent" -> "concurrent.futures" [style="dotted"];
-	}
-	subgraph "cluster_packaging" {
-		label="packaging";
-		"packaging" -> "packaging.requirements" [style="dotted"];
-		"packaging" -> "packaging._elffile" [style="dotted"];
-		"packaging" -> "packaging._manylinux" [style="dotted"];
-		"packaging" -> "packaging._musllinux" [style="dotted"];
-		"packaging" -> "packaging._parser" [style="dotted"];
-		"packaging" -> "packaging._structures" [style="dotted"];
-		"packaging" -> "packaging._tokenizer" [style="dotted"];
-		"packaging" -> "packaging.markers" [style="dotted"];
-		"packaging" -> "packaging.metadata" [style="dotted"];
-		"packaging" -> "packaging.specifiers" [style="dotted"];
-		"packaging" -> "packaging.tags" [style="dotted"];
-		"packaging" -> "packaging.utils" [style="dotted"];
-		"packaging" -> "packaging.version" [style="dotted"];
-		"packaging" -> "packaging.licenses" [style="dotted"];
-	}
-	subgraph "cluster_xmlrpc" {
-		label="xmlrpc";
-		"xmlrpc" -> "xmlrpc.client" [style="dotted"];
-	}
-	subgraph "cluster_pandas._testing" {
-		label="pandas._testing";
-		"pandas._testing" -> "pandas._testing._io" [style="dotted"];
-		"pandas._testing" -> "pandas._testing._random" [style="dotted"];
-		"pandas._testing" -> "pandas._testing._warnings" [style="dotted"];
-		"pandas._testing" -> "pandas._testing.asserters" [style="dotted"];
-		"pandas._testing" -> "pandas._testing.compat" [style="dotted"];
-		"pandas._testing" -> "pandas._testing.contexts" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl" {
-		label="openpyxl";
-		"openpyxl" -> "openpyxl.xml" [style="dotted"];
-		"openpyxl" -> "openpyxl.workbook" [style="dotted"];
-		"openpyxl" -> "openpyxl._constants" [style="dotted"];
-		"openpyxl" -> "openpyxl.compat" [style="dotted"];
-		"openpyxl" -> "openpyxl.reader" [style="dotted"];
-		"openpyxl" -> "openpyxl.tests" [style="dotted"];
-		"openpyxl" -> "openpyxl.chart" [style="dotted"];
-		"openpyxl" -> "openpyxl.utils" [style="dotted"];
-		"openpyxl" -> "openpyxl.worksheet" [style="dotted"];
-		"openpyxl" -> "openpyxl.styles" [style="dotted"];
-		"openpyxl" -> "openpyxl.formula" [style="dotted"];
-		"openpyxl" -> "openpyxl.formatting" [style="dotted"];
-		"openpyxl" -> "openpyxl.descriptors" [style="dotted"];
-		"openpyxl" -> "openpyxl.drawing" [style="dotted"];
-		"openpyxl" -> "openpyxl.chartsheet" [style="dotted"];
-		"openpyxl" -> "openpyxl.packaging" [style="dotted"];
-		"openpyxl" -> "openpyxl.pivot" [style="dotted"];
-		"openpyxl" -> "openpyxl.comments" [style="dotted"];
-		"openpyxl" -> "openpyxl.cell" [style="dotted"];
-		"openpyxl" -> "openpyxl.writer" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.drawing" {
-		label="openpyxl.drawing";
-		"openpyxl.drawing" -> "openpyxl.drawing.drawing" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.spreadsheet_drawing" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.image" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.text" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.colors" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.effect" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.fill" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.geometry" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.line" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.xdr" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.connector" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.graphic" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.picture" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.relation" [style="dotted"];
-		"openpyxl.drawing" -> "openpyxl.drawing.properties" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.dtypes" {
-		label="pandas.core.dtypes";
-		"pandas.core.dtypes" -> "pandas.core.dtypes.common" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.generic" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.astype" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.inference" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.missing" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.dtypes" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.base" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.cast" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.concat" [style="dotted"];
-		"pandas.core.dtypes" -> "pandas.core.dtypes.api" [style="dotted"];
-	}
-	subgraph "cluster_xml" {
-		label="xml";
-		"xml" -> "xml.etree" [style="dotted"];
-		"xml" -> "xml.sax" [style="dotted"];
-		"xml" -> "xml.parsers" [style="dotted"];
-		"xml" -> "xml.dom" [style="dotted"];
-	}
-	subgraph "cluster_pandas.compat.numpy" {
-		label="pandas.compat.numpy";
-		"pandas.compat.numpy" -> "pandas.compat.numpy.function" [style="dotted"];
-	}
-	subgraph "cluster_distutils" {
-		label="distutils";
-		"distutils" -> "distutils.log" [style="dotted"];
-		"distutils" -> "distutils.sysconfig" [style="dotted"];
-		"distutils" -> "distutils.util" [style="dotted"];
-		"distutils" -> "distutils.errors" [style="dotted"];
-		"distutils" -> "distutils.dep_util" [style="dotted"];
-		"distutils" -> "distutils.spawn" [style="dotted"];
-		"distutils" -> "distutils.dir_util" [style="dotted"];
-		"distutils" -> "distutils.file_util" [style="dotted"];
-		"distutils" -> "distutils.filelist" [style="dotted"];
-		"distutils" -> "distutils.debug" [style="dotted"];
-		"distutils" -> "distutils.text_file" [style="dotted"];
-	}
-	subgraph "cluster_multiprocessing.dummy" {
-		label="multiprocessing.dummy";
-		"multiprocessing.dummy" -> "multiprocessing.dummy.connection" [style="dotted"];
-	}
-	subgraph "cluster_numpy.distutils" {
-		label="numpy.distutils";
-		"numpy.distutils" -> "numpy.distutils.cpuinfo" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.array_algos" {
-		label="pandas.core.array_algos";
-		"pandas.core.array_algos" -> "pandas.core.array_algos.masked_reductions" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.masked_accumulations" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.datetimelike_accumulations" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.replace" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.quantile" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.transforms" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.putmask" [style="dotted"];
-		"pandas.core.array_algos" -> "pandas.core.array_algos.take" [style="dotted"];
-	}
-	subgraph "cluster_html" {
-		label="html";
-		"html" -> "html.entities" [style="dotted"];
-	}
-	subgraph "cluster_xml.etree" {
-		label="xml.etree";
-		"xml.etree" -> "xml.etree.ElementPath" [style="dotted"];
-		"xml.etree" -> "xml.etree.ElementTree" [style="dotted"];
-		"xml.etree" -> "xml.etree.ElementInclude" [style="dotted"];
-		"xml.etree" -> "xml.etree.cElementTree" [style="dotted"];
-	}
-	subgraph "cluster_urllib" {
-		label="urllib";
-		"urllib" -> "urllib.parse" [style="dotted"];
-		"urllib" -> "urllib.request" [style="dotted"];
-		"urllib" -> "urllib.error" [style="dotted"];
-		"urllib" -> "urllib.response" [style="dotted"];
-	}
-	subgraph "cluster_json" {
-		label="json";
-		"json" -> "json.scanner" [style="dotted"];
-		"json" -> "json.decoder" [style="dotted"];
-		"json" -> "json.encoder" [style="dotted"];
-	}
-	subgraph "cluster_unittest" {
-		label="unittest";
-		"unittest" -> "unittest.util" [style="dotted"];
-		"unittest" -> "unittest.result" [style="dotted"];
-		"unittest" -> "unittest.async_case" [style="dotted"];
-		"unittest" -> "unittest.case" [style="dotted"];
-		"unittest" -> "unittest.suite" [style="dotted"];
-		"unittest" -> "unittest.loader" [style="dotted"];
-		"unittest" -> "unittest.runner" [style="dotted"];
-		"unittest" -> "unittest.main" [style="dotted"];
-		"unittest" -> "unittest.signals" [style="dotted"];
-	}
-	subgraph "cluster_pandas.io.excel" {
-		label="pandas.io.excel";
-		"pandas.io.excel" -> "pandas.io.excel._base" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._odswriter" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._openpyxl" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._util" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._xlsxwriter" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._odfreader" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._pyxlsb" [style="dotted"];
-		"pandas.io.excel" -> "pandas.io.excel._xlrd" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.indexes" {
-		label="pandas.core.indexes";
-		"pandas.core.indexes" -> "pandas.core.indexes.api" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.base" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.datetimes" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.datetimelike" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.extension" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.range" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.frozen" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.period" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.multi" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.accessors" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.timedeltas" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.category" [style="dotted"];
-		"pandas.core.indexes" -> "pandas.core.indexes.interval" [style="dotted"];
-	}
-	subgraph "cluster_pandas.io.parsers" {
-		label="pandas.io.parsers";
-		"pandas.io.parsers" -> "pandas.io.parsers.readers" [style="dotted"];
-		"pandas.io.parsers" -> "pandas.io.parsers.arrow_parser_wrapper" [style="dotted"];
-		"pandas.io.parsers" -> "pandas.io.parsers.base_parser" [style="dotted"];
-		"pandas.io.parsers" -> "pandas.io.parsers.c_parser_wrapper" [style="dotted"];
-		"pandas.io.parsers" -> "pandas.io.parsers.python_parser" [style="dotted"];
-	}
-	subgraph "cluster_pkg_resources.extern" {
-		label="pkg_resources.extern";
-		"pkg_resources.extern" -> "pkg_resources.extern.appdirs" [style="dotted"];
-		"pkg_resources.extern" -> "pkg_resources.extern.packaging" [style="dotted"];
-	}
-	subgraph "cluster_pandas.tseries" {
-		label="pandas.tseries";
-		"pandas.tseries" -> "pandas.tseries.frequencies" [style="dotted"];
-		"pandas.tseries" -> "pandas.tseries.offsets" [style="dotted"];
-		"pandas.tseries" -> "pandas.tseries.api" [style="dotted"];
-	}
-	subgraph "cluster_numpy.ma" {
-		label="numpy.ma";
-		"numpy.ma" -> "numpy.ma.core" [style="dotted"];
-		"numpy.ma" -> "numpy.ma.extras" [style="dotted"];
-		"numpy.ma" -> "numpy.ma.mrecords" [style="dotted"];
-	}
-	subgraph "cluster_logging" {
-		label="logging";
-	}
-	subgraph "cluster_numpy.random" {
-		label="numpy.random";
-		"numpy.random" -> "numpy.random._pickle" [style="dotted"];
-		"numpy.random" -> "numpy.random._common" [style="dotted"];
-		"numpy.random" -> "numpy.random._bounded_integers" [style="dotted"];
-		"numpy.random" -> "numpy.random._generator" [style="dotted"];
-		"numpy.random" -> "numpy.random.bit_generator" [style="dotted"];
-		"numpy.random" -> "numpy.random._mt19937" [style="dotted"];
-		"numpy.random" -> "numpy.random._pcg64" [style="dotted"];
-		"numpy.random" -> "numpy.random._philox" [style="dotted"];
-		"numpy.random" -> "numpy.random._sfc64" [style="dotted"];
-		"numpy.random" -> "numpy.random.mtrand" [style="dotted"];
-	}
-	subgraph "cluster_pandas._libs.window" {
-		label="pandas._libs.window";
-		"pandas._libs.window" -> "pandas._libs.window.aggregations" [style="dotted"];
-		"pandas._libs.window" -> "pandas._libs.window.indexers" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.arrays.sparse" {
-		label="pandas.core.arrays.sparse";
-		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.accessor" [style="dotted"];
-		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.array" [style="dotted"];
-		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.dtype" [style="dotted"];
-		"pandas.core.arrays.sparse" -> "pandas.core.arrays.sparse.scipy_sparse" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.descriptors" {
-		label="openpyxl.descriptors";
-		"openpyxl.descriptors" -> "openpyxl.descriptors.base" [style="dotted"];
-		"openpyxl.descriptors" -> "openpyxl.descriptors.sequence" [style="dotted"];
-		"openpyxl.descriptors" -> "openpyxl.descriptors.serialisable" [style="dotted"];
-		"openpyxl.descriptors" -> "openpyxl.descriptors.excel" [style="dotted"];
-		"openpyxl.descriptors" -> "openpyxl.descriptors.nested" [style="dotted"];
-		"openpyxl.descriptors" -> "openpyxl.descriptors.namespace" [style="dotted"];
-	}
-	subgraph "cluster_numpy.linalg" {
-		label="numpy.linalg";
-		"numpy.linalg" -> "numpy.linalg.lapack_lite" [style="dotted"];
-		"numpy.linalg" -> "numpy.linalg._umath_linalg" [style="dotted"];
-		"numpy.linalg" -> "numpy.linalg.linalg" [style="dotted"];
-	}
-	subgraph "cluster_pandas._libs.tslibs" {
-		label="pandas._libs.tslibs";
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.dtypes" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.conversion" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.nattype" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.np_datetime" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.offsets" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.period" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timedeltas" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timestamps" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timezones" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.tzconversion" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.vectorized" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.fields" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.base" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.ccalendar" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.parsing" [style="dotted"];
-		"pandas._libs.tslibs" -> "pandas._libs.tslibs.strptime" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.tools" {
-		label="pandas.core.tools";
-		"pandas.core.tools" -> "pandas.core.tools.datetimes" [style="dotted"];
-		"pandas.core.tools" -> "pandas.core.tools.times" [style="dotted"];
-		"pandas.core.tools" -> "pandas.core.tools.numeric" [style="dotted"];
-		"pandas.core.tools" -> "pandas.core.tools.timedeltas" [style="dotted"];
-	}
-	subgraph "cluster_numpy.lib" {
-		label="numpy.lib";
-		"numpy.lib" -> "numpy.lib.mixins" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.scimath" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.type_check" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.index_tricks" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.function_base" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.nanfunctions" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.shape_base" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.stride_tricks" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.twodim_base" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.ufunclike" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.histograms" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.polynomial" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.utils" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.arraysetops" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.format" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.npyio" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.arrayterator" [style="dotted"];
-		"numpy.lib" -> "numpy.lib.arraypad" [style="dotted"];
-		"numpy.lib" -> "numpy.lib._version" [style="dotted"];
-		"numpy.lib" -> "numpy.lib._datasource" [style="dotted"];
-		"numpy.lib" -> "numpy.lib._iotools" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.strings" {
-		label="pandas.core.strings";
-		"pandas.core.strings" -> "pandas.core.strings.object_array" [style="dotted"];
-		"pandas.core.strings" -> "pandas.core.strings.base" [style="dotted"];
-		"pandas.core.strings" -> "pandas.core.strings.accessor" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.window" {
-		label="pandas.core.window";
-		"pandas.core.window" -> "pandas.core.window.ewm" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.expanding" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.rolling" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.common" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.doc" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.numba_" [style="dotted"];
-		"pandas.core.window" -> "pandas.core.window.online" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.comments" {
-		label="openpyxl.comments";
-		"openpyxl.comments" -> "openpyxl.comments.comments" [style="dotted"];
-		"openpyxl.comments" -> "openpyxl.comments.comment_sheet" [style="dotted"];
-		"openpyxl.comments" -> "openpyxl.comments.author" [style="dotted"];
-		"openpyxl.comments" -> "openpyxl.comments.shape_writer" [style="dotted"];
-	}
-	subgraph "cluster_pandas.arrays" {
-		label="pandas.arrays";
-	}
-	subgraph "cluster_pkg_resources" {
-		label="pkg_resources";
-		"pkg_resources" -> "pkg_resources.extern" [style="dotted"];
-		"pkg_resources" -> "pkg_resources._vendor" [style="dotted"];
-	}
-	subgraph "cluster_numpy.fft" {
-		label="numpy.fft";
-		"numpy.fft" -> "numpy.fft._pocketfft_internal" [style="dotted"];
-		"numpy.fft" -> "numpy.fft._pocketfft" [style="dotted"];
-		"numpy.fft" -> "numpy.fft.helper" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.formatting" {
-		label="openpyxl.formatting";
-		"openpyxl.formatting" -> "openpyxl.formatting.rule" [style="dotted"];
-		"openpyxl.formatting" -> "openpyxl.formatting.formatting" [style="dotted"];
-	}
-	subgraph "cluster_pandas.core.groupby" {
-		label="pandas.core.groupby";
-		"pandas.core.groupby" -> "pandas.core.groupby.base" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.grouper" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.ops" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.numba_" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.generic" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.groupby" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.indexing" [style="dotted"];
-		"pandas.core.groupby" -> "pandas.core.groupby.categorical" [style="dotted"];
-	}
-	subgraph "cluster_xml.dom" {
-		label="xml.dom";
-		"xml.dom" -> "xml.dom.domreg" [style="dotted"];
-		"xml.dom" -> "xml.dom.xmlbuilder" [style="dotted"];
-		"xml.dom" -> "xml.dom.minidom" [style="dotted"];
-		"xml.dom" -> "xml.dom.pulldom" [style="dotted"];
-		"xml.dom" -> "xml.dom.minicompat" [style="dotted"];
-		"xml.dom" -> "xml.dom.expatbuilder" [style="dotted"];
-		"xml.dom" -> "xml.dom.NodeFilter" [style="dotted"];
-	}
-	subgraph "cluster_collections" {
-		label="collections";
-		"collections" -> "collections.Mapping" [style="dotted"];
-		"collections" -> "collections.Iterable" [style="dotted"];
-		"collections" -> "collections.MutableMapping" [style="dotted"];
-		"collections" -> "collections.abc" [style="dotted"];
-	}
-	subgraph "cluster_numpy.testing._private" {
-		label="numpy.testing._private";
-		"numpy.testing._private" -> "numpy.testing._private.decorators" [style="dotted"];
-		"numpy.testing._private" -> "numpy.testing._private.utils" [style="dotted"];
-		"numpy.testing._private" -> "numpy.testing._private.nosetester" [style="dotted"];
-		"numpy.testing._private" -> "numpy.testing._private.noseclasses" [style="dotted"];
-		"numpy.testing._private" -> "numpy.testing._private.parameterized" [style="dotted"];
-	}
-	subgraph "cluster_pandas._libs" {
-		label="pandas._libs";
-		"pandas._libs" -> "pandas._libs.interval" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.tslibs" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.missing" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.lib" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.algos" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.index" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.reduction" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.tslib" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.reshape" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.writers" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.json" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.hashtable" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.arrays" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.groupby" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.hashing" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.indexing" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.internals" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.join" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.ops" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.ops_dispatch" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.parsers" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.properties" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.sparse" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.testing" [style="dotted"];
-		"pandas._libs" -> "pandas._libs.window" [style="dotted"];
-	}
-	subgraph "cluster_concurrent.futures" {
-		label="concurrent.futures";
-		"concurrent.futures" -> "concurrent.futures._base" [style="dotted"];
-		"concurrent.futures" -> "concurrent.futures.process" [style="dotted"];
-		"concurrent.futures" -> "concurrent.futures.thread" [style="dotted"];
-	}
-	subgraph "cluster_openpyxl.chart" {
-		label="openpyxl.chart";
-		"openpyxl.chart" -> "openpyxl.chart.area_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.bar_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.bubble_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.line_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.pie_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.radar_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.scatter_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.stock_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.surface_chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.series_factory" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.reference" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.chartspace" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.reader" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.data_source" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.series" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.shapes" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.error_bar" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.label" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.marker" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.trendline" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.text" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.layout" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.picture" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart._chart" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart._3d" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.axis" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.descriptors" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.title" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.legend" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.updown_bars" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.plotarea" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.pivot" [style="dotted"];
-		"openpyxl.chart" -> "openpyxl.chart.print_settings" [style="dotted"];
-	}
-	subgraph "cluster_ctypes.macholib" {
-		label="ctypes.macholib";
-		"ctypes.macholib" -> "ctypes.macholib.dyld" [style="dotted"];
-		"ctypes.macholib" -> "ctypes.macholib.framework" [style="dotted"];
-		"ctypes.macholib" -> "ctypes.macholib.dylib" [style="dotted"];
 	}
 	subgraph "cluster_numpy.core" {
 		label="numpy.core";
@@ -2753,44 +2110,687 @@ charset="UTF-8";
 		"numpy.core" -> "numpy.core._string_helpers" [style="dotted"];
 		"numpy.core" -> "numpy.core._type_aliases" [style="dotted"];
 	}
-	"<PyiModuleGraph>" -> "posix" [];
-	"<PyiModuleGraph>" -> "_sre" [];
-	"<PyiModuleGraph>" -> "gc" [];
-	"<PyiModuleGraph>" -> "time" [];
+	subgraph "cluster_concurrent" {
+		label="concurrent";
+		"concurrent" -> "concurrent.futures" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.compat" {
+		label="openpyxl.compat";
+		"openpyxl.compat" -> "openpyxl.compat.numbers" [style="dotted"];
+		"openpyxl.compat" -> "openpyxl.compat.strings" [style="dotted"];
+	}
+	subgraph "cluster_numpy.compat" {
+		label="numpy.compat";
+		"numpy.compat" -> "numpy.compat._inspect" [style="dotted"];
+		"numpy.compat" -> "numpy.compat.py3k" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.computation" {
+		label="pandas.core.computation";
+		"pandas.core.computation" -> "pandas.core.computation.expressions" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.expr" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.api" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.parsing" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.check" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.ops" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.scope" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.common" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.eval" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.engines" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.align" [style="dotted"];
+		"pandas.core.computation" -> "pandas.core.computation.pytables" [style="dotted"];
+	}
+	subgraph "cluster_pandas._libs.tslibs" {
+		label="pandas._libs.tslibs";
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.dtypes" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.conversion" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.nattype" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.np_datetime" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.offsets" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.period" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timedeltas" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timestamps" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.timezones" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.tzconversion" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.vectorized" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.fields" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.base" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.ccalendar" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.parsing" [style="dotted"];
+		"pandas._libs.tslibs" -> "pandas._libs.tslibs.strptime" [style="dotted"];
+	}
+	subgraph "cluster_pkg_resources._vendor.packaging" {
+		label="pkg_resources._vendor.packaging";
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.__about__" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._compat" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._structures" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging._typing" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.markers" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.requirements" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.specifiers" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.tags" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.utils" [style="dotted"];
+		"pkg_resources._vendor.packaging" -> "pkg_resources._vendor.packaging.version" [style="dotted"];
+	}
+	subgraph "cluster_pandas.api.types" {
+		label="pandas.api.types";
+	}
+	subgraph "cluster_openpyxl.writer" {
+		label="openpyxl.writer";
+		"openpyxl.writer" -> "openpyxl.writer.excel" [style="dotted"];
+		"openpyxl.writer" -> "openpyxl.writer.theme" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.reader" {
+		label="openpyxl.reader";
+		"openpyxl.reader" -> "openpyxl.reader.excel" [style="dotted"];
+		"openpyxl.reader" -> "openpyxl.reader.strings" [style="dotted"];
+		"openpyxl.reader" -> "openpyxl.reader.workbook" [style="dotted"];
+		"openpyxl.reader" -> "openpyxl.reader.drawings" [style="dotted"];
+	}
+	subgraph "cluster_dateutil.tz" {
+		label="dateutil.tz";
+		"dateutil.tz" -> "dateutil.tz.tzfile" [style="dotted"];
+		"dateutil.tz" -> "dateutil.tz.tz" [style="dotted"];
+		"dateutil.tz" -> "dateutil.tz._common" [style="dotted"];
+		"dateutil.tz" -> "dateutil.tz._factories" [style="dotted"];
+		"dateutil.tz" -> "dateutil.tz.win" [style="dotted"];
+	}
+	subgraph "cluster_pandas.api.interchange" {
+		label="pandas.api.interchange";
+	}
+	subgraph "cluster_pkg_resources._vendor" {
+		label="pkg_resources._vendor";
+		"pkg_resources._vendor" -> "pkg_resources._vendor.appdirs" [style="dotted"];
+		"pkg_resources._vendor" -> "pkg_resources._vendor.pyparsing" [style="dotted"];
+		"pkg_resources._vendor" -> "pkg_resources._vendor.packaging" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.methods" {
+		label="pandas.core.methods";
+		"pandas.core.methods" -> "pandas.core.methods.selectn" [style="dotted"];
+		"pandas.core.methods" -> "pandas.core.methods.describe" [style="dotted"];
+		"pandas.core.methods" -> "pandas.core.methods.to_dict" [style="dotted"];
+	}
+	subgraph "cluster_logging" {
+		label="logging";
+	}
+	subgraph "cluster_concurrent.futures" {
+		label="concurrent.futures";
+		"concurrent.futures" -> "concurrent.futures._base" [style="dotted"];
+		"concurrent.futures" -> "concurrent.futures.process" [style="dotted"];
+		"concurrent.futures" -> "concurrent.futures.thread" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.util" {
+		label="pandas.core.util";
+		"pandas.core.util" -> "pandas.core.util.hashing" [style="dotted"];
+		"pandas.core.util" -> "pandas.core.util.numba_" [style="dotted"];
+	}
+	subgraph "cluster_pandas.compat" {
+		label="pandas.compat";
+		"pandas.compat" -> "pandas.compat._constants" [style="dotted"];
+		"pandas.compat" -> "pandas.compat.compressors" [style="dotted"];
+		"pandas.compat" -> "pandas.compat.numpy" [style="dotted"];
+		"pandas.compat" -> "pandas.compat.pyarrow" [style="dotted"];
+		"pandas.compat" -> "pandas.compat._optional" [style="dotted"];
+		"pandas.compat" -> "pandas.compat.pickle_compat" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.workbook" {
+		label="openpyxl.workbook";
+		"openpyxl.workbook" -> "openpyxl.workbook.workbook" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.child" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.defined_name" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.external_link" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.external_reference" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.function_group" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.properties" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.protection" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.smart_tags" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.views" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook.web" [style="dotted"];
+		"openpyxl.workbook" -> "openpyxl.workbook._writer" [style="dotted"];
+	}
+	subgraph "cluster_dateutil" {
+		label="dateutil";
+		"dateutil" -> "dateutil._version" [style="dotted"];
+		"dateutil" -> "dateutil.relativedelta" [style="dotted"];
+		"dateutil" -> "dateutil.easter" [style="dotted"];
+		"dateutil" -> "dateutil.tz" [style="dotted"];
+		"dateutil" -> "dateutil.rrule" [style="dotted"];
+		"dateutil" -> "dateutil.parser" [style="dotted"];
+		"dateutil" -> "dateutil.zoneinfo" [style="dotted"];
+		"dateutil" -> "dateutil._common" [style="dotted"];
+	}
+	subgraph "cluster_json" {
+		label="json";
+		"json" -> "json.scanner" [style="dotted"];
+		"json" -> "json.decoder" [style="dotted"];
+		"json" -> "json.encoder" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.interchange" {
+		label="pandas.core.interchange";
+		"pandas.core.interchange" -> "pandas.core.interchange.dataframe_protocol" [style="dotted"];
+		"pandas.core.interchange" -> "pandas.core.interchange.dataframe" [style="dotted"];
+		"pandas.core.interchange" -> "pandas.core.interchange.column" [style="dotted"];
+		"pandas.core.interchange" -> "pandas.core.interchange.buffer" [style="dotted"];
+		"pandas.core.interchange" -> "pandas.core.interchange.utils" [style="dotted"];
+		"pandas.core.interchange" -> "pandas.core.interchange.from_dataframe" [style="dotted"];
+	}
+	subgraph "cluster_numpy.random" {
+		label="numpy.random";
+		"numpy.random" -> "numpy.random._pickle" [style="dotted"];
+		"numpy.random" -> "numpy.random._common" [style="dotted"];
+		"numpy.random" -> "numpy.random._bounded_integers" [style="dotted"];
+		"numpy.random" -> "numpy.random._generator" [style="dotted"];
+		"numpy.random" -> "numpy.random.bit_generator" [style="dotted"];
+		"numpy.random" -> "numpy.random._mt19937" [style="dotted"];
+		"numpy.random" -> "numpy.random._pcg64" [style="dotted"];
+		"numpy.random" -> "numpy.random._philox" [style="dotted"];
+		"numpy.random" -> "numpy.random._sfc64" [style="dotted"];
+		"numpy.random" -> "numpy.random.mtrand" [style="dotted"];
+	}
+	subgraph "cluster_pandas.io" {
+		label="pandas.io";
+		"pandas.io" -> "pandas.io.formats" [style="dotted"];
+		"pandas.io" -> "pandas.io.json" [style="dotted"];
+		"pandas.io" -> "pandas.io.stata" [style="dotted"];
+		"pandas.io" -> "pandas.io.sql" [style="dotted"];
+		"pandas.io" -> "pandas.io.clipboards" [style="dotted"];
+		"pandas.io" -> "pandas.io.gbq" [style="dotted"];
+		"pandas.io" -> "pandas.io.api" [style="dotted"];
+		"pandas.io" -> "pandas.io.pytables" [style="dotted"];
+		"pandas.io" -> "pandas.io.pickle" [style="dotted"];
+		"pandas.io" -> "pandas.io._util" [style="dotted"];
+		"pandas.io" -> "pandas.io.clipboard" [style="dotted"];
+		"pandas.io" -> "pandas.io.parsers" [style="dotted"];
+		"pandas.io" -> "pandas.io.common" [style="dotted"];
+		"pandas.io" -> "pandas.io.excel" [style="dotted"];
+		"pandas.io" -> "pandas.io.feather_format" [style="dotted"];
+		"pandas.io" -> "pandas.io.parquet" [style="dotted"];
+		"pandas.io" -> "pandas.io.orc" [style="dotted"];
+		"pandas.io" -> "pandas.io.xml" [style="dotted"];
+		"pandas.io" -> "pandas.io.html" [style="dotted"];
+		"pandas.io" -> "pandas.io.sas" [style="dotted"];
+		"pandas.io" -> "pandas.io.spss" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.drawing" {
+		label="openpyxl.drawing";
+		"openpyxl.drawing" -> "openpyxl.drawing.drawing" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.spreadsheet_drawing" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.image" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.text" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.colors" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.effect" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.fill" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.geometry" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.line" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.xdr" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.connector" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.graphic" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.picture" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.relation" [style="dotted"];
+		"openpyxl.drawing" -> "openpyxl.drawing.properties" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.cell" {
+		label="openpyxl.cell";
+		"openpyxl.cell" -> "openpyxl.cell.cell" [style="dotted"];
+		"openpyxl.cell" -> "openpyxl.cell.read_only" [style="dotted"];
+		"openpyxl.cell" -> "openpyxl.cell.text" [style="dotted"];
+		"openpyxl.cell" -> "openpyxl.cell._writer" [style="dotted"];
+	}
+	subgraph "cluster_numpy.lib" {
+		label="numpy.lib";
+		"numpy.lib" -> "numpy.lib.mixins" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.scimath" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.type_check" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.index_tricks" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.function_base" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.nanfunctions" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.shape_base" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.stride_tricks" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.twodim_base" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.ufunclike" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.histograms" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.polynomial" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.utils" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.arraysetops" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.format" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.npyio" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.arrayterator" [style="dotted"];
+		"numpy.lib" -> "numpy.lib.arraypad" [style="dotted"];
+		"numpy.lib" -> "numpy.lib._version" [style="dotted"];
+		"numpy.lib" -> "numpy.lib._datasource" [style="dotted"];
+		"numpy.lib" -> "numpy.lib._iotools" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.window" {
+		label="pandas.core.window";
+		"pandas.core.window" -> "pandas.core.window.ewm" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.expanding" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.rolling" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.common" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.doc" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.numba_" [style="dotted"];
+		"pandas.core.window" -> "pandas.core.window.online" [style="dotted"];
+	}
+	subgraph "cluster_xml.dom" {
+		label="xml.dom";
+		"xml.dom" -> "xml.dom.domreg" [style="dotted"];
+		"xml.dom" -> "xml.dom.xmlbuilder" [style="dotted"];
+		"xml.dom" -> "xml.dom.minidom" [style="dotted"];
+		"xml.dom" -> "xml.dom.pulldom" [style="dotted"];
+		"xml.dom" -> "xml.dom.minicompat" [style="dotted"];
+		"xml.dom" -> "xml.dom.expatbuilder" [style="dotted"];
+		"xml.dom" -> "xml.dom.NodeFilter" [style="dotted"];
+	}
+	subgraph "cluster_pandas.util" {
+		label="pandas.util";
+		"pandas.util" -> "pandas.util._decorators" [style="dotted"];
+		"pandas.util" -> "pandas.util._print_versions" [style="dotted"];
+		"pandas.util" -> "pandas.util._tester" [style="dotted"];
+		"pandas.util" -> "pandas.util._exceptions" [style="dotted"];
+		"pandas.util" -> "pandas.util._validators" [style="dotted"];
+		"pandas.util" -> "pandas.util._str_methods" [style="dotted"];
+		"pandas.util" -> "pandas.util.version" [style="dotted"];
+	}
+	subgraph "cluster_pandas.io.clipboard" {
+		label="pandas.io.clipboard";
+	}
+	subgraph "cluster_importlib" {
+		label="importlib";
+		"importlib" -> "importlib._bootstrap" [style="dotted"];
+		"importlib" -> "importlib._bootstrap_external" [style="dotted"];
+		"importlib" -> "importlib.machinery" [style="dotted"];
+		"importlib" -> "importlib.util" [style="dotted"];
+		"importlib" -> "importlib.metadata" [style="dotted"];
+		"importlib" -> "importlib.abc" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.tools" {
+		label="pandas.core.tools";
+		"pandas.core.tools" -> "pandas.core.tools.datetimes" [style="dotted"];
+		"pandas.core.tools" -> "pandas.core.tools.times" [style="dotted"];
+		"pandas.core.tools" -> "pandas.core.tools.numeric" [style="dotted"];
+		"pandas.core.tools" -> "pandas.core.tools.timedeltas" [style="dotted"];
+	}
+	subgraph "cluster_ctypes" {
+		label="ctypes";
+		"ctypes" -> "ctypes._endian" [style="dotted"];
+		"ctypes" -> "ctypes.wintypes" [style="dotted"];
+		"ctypes" -> "ctypes.util" [style="dotted"];
+		"ctypes" -> "ctypes._aix" [style="dotted"];
+		"ctypes" -> "ctypes.macholib" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.strings" {
+		label="pandas.core.strings";
+		"pandas.core.strings" -> "pandas.core.strings.object_array" [style="dotted"];
+		"pandas.core.strings" -> "pandas.core.strings.base" [style="dotted"];
+		"pandas.core.strings" -> "pandas.core.strings.accessor" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.descriptors" {
+		label="openpyxl.descriptors";
+		"openpyxl.descriptors" -> "openpyxl.descriptors.base" [style="dotted"];
+		"openpyxl.descriptors" -> "openpyxl.descriptors.sequence" [style="dotted"];
+		"openpyxl.descriptors" -> "openpyxl.descriptors.serialisable" [style="dotted"];
+		"openpyxl.descriptors" -> "openpyxl.descriptors.excel" [style="dotted"];
+		"openpyxl.descriptors" -> "openpyxl.descriptors.nested" [style="dotted"];
+		"openpyxl.descriptors" -> "openpyxl.descriptors.namespace" [style="dotted"];
+	}
+	subgraph "cluster_numpy" {
+		label="numpy";
+		"numpy" -> "numpy._globals" [style="dotted"];
+		"numpy" -> "numpy.histogramdd" [style="dotted"];
+		"numpy" -> "numpy.ndarray" [style="dotted"];
+		"numpy" -> "numpy.amax" [style="dotted"];
+		"numpy" -> "numpy.amin" [style="dotted"];
+		"numpy" -> "numpy.iscomplexobj" [style="dotted"];
+		"numpy" -> "numpy.bool_" [style="dotted"];
+		"numpy" -> "numpy.array" [style="dotted"];
+		"numpy" -> "numpy.expand_dims" [style="dotted"];
+		"numpy" -> "numpy.dtype" [style="dotted"];
+		"numpy" -> "numpy.recarray" [style="dotted"];
+		"numpy" -> "numpy.eye" [style="dotted"];
+		"numpy" -> "numpy.__config__" [style="dotted"];
+		"numpy" -> "numpy._version" [style="dotted"];
+		"numpy" -> "numpy._distributor_init" [style="dotted"];
+		"numpy" -> "numpy.core" [style="dotted"];
+		"numpy" -> "numpy.compat" [style="dotted"];
+		"numpy" -> "numpy.lib" [style="dotted"];
+		"numpy" -> "numpy.linalg" [style="dotted"];
+		"numpy" -> "numpy.fft" [style="dotted"];
+		"numpy" -> "numpy.polynomial" [style="dotted"];
+		"numpy" -> "numpy.random" [style="dotted"];
+		"numpy" -> "numpy.ctypeslib" [style="dotted"];
+		"numpy" -> "numpy.ma" [style="dotted"];
+		"numpy" -> "numpy.matrixlib" [style="dotted"];
+		"numpy" -> "numpy.testing" [style="dotted"];
+		"numpy" -> "numpy._pytesttester" [style="dotted"];
+		"numpy" -> "numpy.unsignedinteger" [style="dotted"];
+		"numpy" -> "numpy.floating" [style="dotted"];
+		"numpy" -> "numpy.complexfloating" [style="dotted"];
+		"numpy" -> "numpy.number" [style="dotted"];
+		"numpy" -> "numpy.timedelta64" [style="dotted"];
+		"numpy" -> "numpy.datetime64" [style="dotted"];
+		"numpy" -> "numpy.object_" [style="dotted"];
+		"numpy" -> "numpy.void" [style="dotted"];
+		"numpy" -> "numpy.str_" [style="dotted"];
+		"numpy" -> "numpy.bytes_" [style="dotted"];
+		"numpy" -> "numpy.distutils" [style="dotted"];
+		"numpy" -> "numpy.version" [style="dotted"];
+		"numpy" -> "numpy.typing" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core._numba.kernels" {
+		label="pandas.core._numba.kernels";
+		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.mean_" [style="dotted"];
+		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.min_max_" [style="dotted"];
+		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.sum_" [style="dotted"];
+		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.var_" [style="dotted"];
+		"pandas.core._numba.kernels" -> "pandas.core._numba.kernels.shared" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.styles" {
+		label="openpyxl.styles";
+		"openpyxl.styles" -> "openpyxl.styles.alignment" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.borders" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.colors" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.fills" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.fonts" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.numbers" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.protection" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.named_styles" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.stylesheet" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.cell_style" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.styleable" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.proxy" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.builtins" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.differential" [style="dotted"];
+		"openpyxl.styles" -> "openpyxl.styles.table" [style="dotted"];
+	}
+	subgraph "cluster_openpyxl.workbook.external_link" {
+		label="openpyxl.workbook.external_link";
+		"openpyxl.workbook.external_link" -> "openpyxl.workbook.external_link.external" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.indexes" {
+		label="pandas.core.indexes";
+		"pandas.core.indexes" -> "pandas.core.indexes.api" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.base" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.datetimes" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.datetimelike" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.extension" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.range" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.frozen" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.period" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.multi" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.accessors" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.timedeltas" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.category" [style="dotted"];
+		"pandas.core.indexes" -> "pandas.core.indexes.interval" [style="dotted"];
+	}
+	subgraph "cluster_pandas._testing" {
+		label="pandas._testing";
+		"pandas._testing" -> "pandas._testing._io" [style="dotted"];
+		"pandas._testing" -> "pandas._testing._random" [style="dotted"];
+		"pandas._testing" -> "pandas._testing._warnings" [style="dotted"];
+		"pandas._testing" -> "pandas._testing.asserters" [style="dotted"];
+		"pandas._testing" -> "pandas._testing.compat" [style="dotted"];
+		"pandas._testing" -> "pandas._testing.contexts" [style="dotted"];
+	}
+	subgraph "cluster_six.moves" {
+		label="six.moves";
+		"six.moves" -> "six.moves._thread" [style="dotted"];
+		"six.moves" -> "six.moves.winreg" [style="dotted"];
+		"six.moves" -> "six.moves.range" [style="dotted"];
+	}
+	subgraph "cluster_numpy.typing" {
+		label="numpy.typing";
+		"numpy.typing" -> "numpy.typing._nbit" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._char_codes" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._scalars" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._shape" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._dtype_like" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._array_like" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._generic_alias" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._ufunc" [style="dotted"];
+		"numpy.typing" -> "numpy.typing._add_docstring" [style="dotted"];
+	}
+	subgraph "cluster_pkg_resources.extern" {
+		label="pkg_resources.extern";
+		"pkg_resources.extern" -> "pkg_resources.extern.appdirs" [style="dotted"];
+		"pkg_resources.extern" -> "pkg_resources.extern.packaging" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.ops" {
+		label="pandas.core.ops";
+		"pandas.core.ops" -> "pandas.core.ops.missing" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.array_ops" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.common" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.docstrings" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.invalid" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.mask_ops" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.methods" [style="dotted"];
+		"pandas.core.ops" -> "pandas.core.ops.dispatch" [style="dotted"];
+	}
+	subgraph "cluster_pandas.util.version" {
+		label="pandas.util.version";
+	}
+	subgraph "cluster_pandas.core" {
+		label="pandas.core";
+		"pandas.core" -> "pandas.core.roperator" [style="dotted"];
+		"pandas.core" -> "pandas.core.algorithms" [style="dotted"];
+		"pandas.core" -> "pandas.core.arraylike" [style="dotted"];
+		"pandas.core" -> "pandas.core.ops" [style="dotted"];
+		"pandas.core" -> "pandas.core.missing" [style="dotted"];
+		"pandas.core" -> "pandas.core.nanops" [style="dotted"];
+		"pandas.core" -> "pandas.core.indexing" [style="dotted"];
+		"pandas.core" -> "pandas.core.sample" [style="dotted"];
+		"pandas.core" -> "pandas.core.config_init" [style="dotted"];
+		"pandas.core" -> "pandas.core.api" [style="dotted"];
+		"pandas.core" -> "pandas.core.util" [style="dotted"];
+		"pandas.core" -> "pandas.core.generic" [style="dotted"];
+		"pandas.core" -> "pandas.core.common" [style="dotted"];
+		"pandas.core" -> "pandas.core.arrays" [style="dotted"];
+		"pandas.core" -> "pandas.core.base" [style="dotted"];
+		"pandas.core" -> "pandas.core.construction" [style="dotted"];
+		"pandas.core" -> "pandas.core.flags" [style="dotted"];
+		"pandas.core" -> "pandas.core.internals" [style="dotted"];
+		"pandas.core" -> "pandas.core.shared_docs" [style="dotted"];
+		"pandas.core" -> "pandas.core.sorting" [style="dotted"];
+		"pandas.core" -> "pandas.core.window" [style="dotted"];
+		"pandas.core" -> "pandas.core.frame" [style="dotted"];
+		"pandas.core" -> "pandas.core.resample" [style="dotted"];
+		"pandas.core" -> "pandas.core.series" [style="dotted"];
+		"pandas.core" -> "pandas.core.tools" [style="dotted"];
+		"pandas.core" -> "pandas.core.indexers" [style="dotted"];
+		"pandas.core" -> "pandas.core.array_algos" [style="dotted"];
+		"pandas.core" -> "pandas.core.strings" [style="dotted"];
+		"pandas.core" -> "pandas.core.dtypes" [style="dotted"];
+		"pandas.core" -> "pandas.core.accessor" [style="dotted"];
+		"pandas.core" -> "pandas.core.indexes" [style="dotted"];
+		"pandas.core" -> "pandas.core.reshape" [style="dotted"];
+		"pandas.core" -> "pandas.core.groupby" [style="dotted"];
+		"pandas.core" -> "pandas.core.computation" [style="dotted"];
+		"pandas.core" -> "pandas.core._numba" [style="dotted"];
+		"pandas.core" -> "pandas.core.apply" [style="dotted"];
+		"pandas.core" -> "pandas.core.methods" [style="dotted"];
+		"pandas.core" -> "pandas.core.interchange" [style="dotted"];
+	}
+	subgraph "cluster_pandas.compat.numpy" {
+		label="pandas.compat.numpy";
+		"pandas.compat.numpy" -> "pandas.compat.numpy.function" [style="dotted"];
+	}
+	subgraph "cluster_numpy.fft" {
+		label="numpy.fft";
+		"numpy.fft" -> "numpy.fft._pocketfft_internal" [style="dotted"];
+		"numpy.fft" -> "numpy.fft._pocketfft" [style="dotted"];
+		"numpy.fft" -> "numpy.fft.helper" [style="dotted"];
+	}
+	subgraph "cluster_packaging" {
+		label="packaging";
+		"packaging" -> "packaging.requirements" [style="dotted"];
+		"packaging" -> "packaging._elffile" [style="dotted"];
+		"packaging" -> "packaging._manylinux" [style="dotted"];
+		"packaging" -> "packaging._musllinux" [style="dotted"];
+		"packaging" -> "packaging._parser" [style="dotted"];
+		"packaging" -> "packaging._structures" [style="dotted"];
+		"packaging" -> "packaging._tokenizer" [style="dotted"];
+		"packaging" -> "packaging.markers" [style="dotted"];
+		"packaging" -> "packaging.metadata" [style="dotted"];
+		"packaging" -> "packaging.specifiers" [style="dotted"];
+		"packaging" -> "packaging.tags" [style="dotted"];
+		"packaging" -> "packaging.utils" [style="dotted"];
+		"packaging" -> "packaging.version" [style="dotted"];
+		"packaging" -> "packaging.licenses" [style="dotted"];
+	}
+	subgraph "cluster_numpy.polynomial" {
+		label="numpy.polynomial";
+		"numpy.polynomial" -> "numpy.polynomial.polyutils" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.polynomial" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.chebyshev" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.legendre" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.hermite" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.hermite_e" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial.laguerre" [style="dotted"];
+		"numpy.polynomial" -> "numpy.polynomial._polybase" [style="dotted"];
+	}
+	subgraph "cluster_numpy.testing._private" {
+		label="numpy.testing._private";
+		"numpy.testing._private" -> "numpy.testing._private.decorators" [style="dotted"];
+		"numpy.testing._private" -> "numpy.testing._private.utils" [style="dotted"];
+		"numpy.testing._private" -> "numpy.testing._private.nosetester" [style="dotted"];
+		"numpy.testing._private" -> "numpy.testing._private.noseclasses" [style="dotted"];
+		"numpy.testing._private" -> "numpy.testing._private.parameterized" [style="dotted"];
+	}
+	subgraph "cluster_multiprocessing" {
+		label="multiprocessing";
+		"multiprocessing" -> "multiprocessing.process" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.util" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.AuthenticationError" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.BufferTooShort" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.resource_sharer" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.connection" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.get_start_method" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.set_start_method" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.resource_tracker" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.spawn" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.forkserver" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.reduction" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.get_context" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.TimeoutError" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.pool" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.shared_memory" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.context" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.managers" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.synchronize" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.queues" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.sharedctypes" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.popen_fork" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.popen_spawn_posix" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.popen_forkserver" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.popen_spawn_win32" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.heap" [style="dotted"];
+		"multiprocessing" -> "multiprocessing.dummy" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.dtypes" {
+		label="pandas.core.dtypes";
+		"pandas.core.dtypes" -> "pandas.core.dtypes.common" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.generic" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.astype" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.inference" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.missing" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.dtypes" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.base" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.cast" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.concat" [style="dotted"];
+		"pandas.core.dtypes" -> "pandas.core.dtypes.api" [style="dotted"];
+	}
+	subgraph "cluster_pandas.core.reshape" {
+		label="pandas.core.reshape";
+		"pandas.core.reshape" -> "pandas.core.reshape.api" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.concat" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.merge" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.tile" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.util" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.reshape" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.melt" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.pivot" [style="dotted"];
+		"pandas.core.reshape" -> "pandas.core.reshape.encoding" [style="dotted"];
+	}
+	subgraph "cluster_pandas._config" {
+		label="pandas._config";
+		"pandas._config" -> "pandas._config.config" [style="dotted"];
+		"pandas._config" -> "pandas._config.dates" [style="dotted"];
+		"pandas._config" -> "pandas._config.display" [style="dotted"];
+		"pandas._config" -> "pandas._config.localization" [style="dotted"];
+	}
+	subgraph "cluster_pandas.io.formats" {
+		label="pandas.io.formats";
+		"pandas.io.formats" -> "pandas.io.formats.style" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.format" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.printing" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.excel" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.console" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.style_render" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats._color_data" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.css" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.info" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.xml" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.latex" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.html" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.string" [style="dotted"];
+		"pandas.io.formats" -> "pandas.io.formats.csvs" [style="dotted"];
+	}
+	subgraph "cluster_unittest" {
+		label="unittest";
+		"unittest" -> "unittest.util" [style="dotted"];
+		"unittest" -> "unittest.result" [style="dotted"];
+		"unittest" -> "unittest.async_case" [style="dotted"];
+		"unittest" -> "unittest.case" [style="dotted"];
+		"unittest" -> "unittest.suite" [style="dotted"];
+		"unittest" -> "unittest.loader" [style="dotted"];
+		"unittest" -> "unittest.runner" [style="dotted"];
+		"unittest" -> "unittest.main" [style="dotted"];
+		"unittest" -> "unittest.signals" [style="dotted"];
+	}
+	subgraph "cluster__pyi_rth_utils" {
+		label="_pyi_rth_utils";
+		"_pyi_rth_utils" -> "_pyi_rth_utils.qt" [style="dotted"];
+	}
+	subgraph "cluster_pandas._libs.window" {
+		label="pandas._libs.window";
+		"pandas._libs.window" -> "pandas._libs.window.aggregations" [style="dotted"];
+		"pandas._libs.window" -> "pandas._libs.window.indexers" [style="dotted"];
+	}
 	"<PyiModuleGraph>" -> "codecs" [];
+	"<PyiModuleGraph>" -> "encodings" [];
+	"<PyiModuleGraph>" -> "posix" [];
+	"<PyiModuleGraph>" -> "ntpath" [];
+	"<PyiModuleGraph>" -> "time" [];
 	"<PyiModuleGraph>" -> "_datetime" [];
 	"<PyiModuleGraph>" -> "datetime" [];
+	"<PyiModuleGraph>" -> "gc" [];
 	"<PyiModuleGraph>" -> "_pickle" [];
-	"<PyiModuleGraph>" -> "ntpath" [];
 	"<PyiModuleGraph>" -> "_posixsubprocess" [];
+	"<PyiModuleGraph>" -> "_sre" [];
+	"<PyiModuleGraph>" -> "_bootlocale" [];
+	"<PyiModuleGraph>" -> "re" [];
+	"<PyiModuleGraph>" -> "warnings" [];
+	"<PyiModuleGraph>" -> "abc" [];
+	"<PyiModuleGraph>" -> "enum" [];
+	"<PyiModuleGraph>" -> "functools" [];
+	"<PyiModuleGraph>" -> "operator" [];
+	"<PyiModuleGraph>" -> "sre_parse" [];
+	"<PyiModuleGraph>" -> "collections" [];
+	"<PyiModuleGraph>" -> "genericpath" [];
+	"<PyiModuleGraph>" -> "io" [];
+	"<PyiModuleGraph>" -> "reprlib" [];
+	"<PyiModuleGraph>" -> "weakref" [];
+	"<PyiModuleGraph>" -> "copyreg" [];
 	"<PyiModuleGraph>" -> "traceback" [];
-	"<PyiModuleGraph>" -> "sre_constants" [];
+	"<PyiModuleGraph>" -> "types" [];
+	"<PyiModuleGraph>" -> "os" [];
+	"<PyiModuleGraph>" -> "stat" [];
+	"<PyiModuleGraph>" -> "locale" [];
 	"<PyiModuleGraph>" -> "_weakrefset" [];
 	"<PyiModuleGraph>" -> "keyword" [];
-	"<PyiModuleGraph>" -> "heapq" [];
-	"<PyiModuleGraph>" -> "enum" [];
-	"<PyiModuleGraph>" -> "locale" [];
-	"<PyiModuleGraph>" -> "weakref" [];
-	"<PyiModuleGraph>" -> "posixpath" [];
-	"<PyiModuleGraph>" -> "copyreg" [];
-	"<PyiModuleGraph>" -> "io" [];
-	"<PyiModuleGraph>" -> "genericpath" [];
 	"<PyiModuleGraph>" -> "linecache" [];
-	"<PyiModuleGraph>" -> "sre_parse" [];
-	"<PyiModuleGraph>" -> "encodings" [];
-	"<PyiModuleGraph>" -> "stat" [];
-	"<PyiModuleGraph>" -> "collections" [];
+	"<PyiModuleGraph>" -> "posixpath" [];
+	"<PyiModuleGraph>" -> "sre_constants" [];
 	"<PyiModuleGraph>" -> "_collections_abc" [];
-	"<PyiModuleGraph>" -> "operator" [];
-	"<PyiModuleGraph>" -> "types" [];
-	"<PyiModuleGraph>" -> "re" [];
-	"<PyiModuleGraph>" -> "os" [];
-	"<PyiModuleGraph>" -> "warnings" [];
+	"<PyiModuleGraph>" -> "heapq" [];
 	"<PyiModuleGraph>" -> "sre_compile" [];
-	"<PyiModuleGraph>" -> "reprlib" [];
-	"<PyiModuleGraph>" -> "functools" [];
-	"<PyiModuleGraph>" -> "abc" [];
-	"<PyiModuleGraph>" -> "_bootlocale" [];
 	"<PyiModuleGraph>" -> "C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" [];
 	"<PyiModuleGraph>" -> "_json" [];
 	"<PyiModuleGraph>" -> "_ssl" [];
@@ -2843,7 +2843,7 @@ charset="UTF-8";
 	"copy" -> "types" [];
 	"copy" -> "weakref" [];
 	"copy" -> "copyreg" [];
-	"copy" -> "'org.python'" [];
+	"copy" -> "org" [];
 	"gettext" -> "locale" [];
 	"gettext" -> "os" [];
 	"gettext" -> "re" [];
@@ -3019,7 +3019,7 @@ charset="UTF-8";
 	"pickle" -> "codecs" [];
 	"pickle" -> "_compat_pickle" [];
 	"pickle" -> "_pickle" [];
-	"pickle" -> "org" [];
+	"pickle" -> "'org.python'" [];
 	"pickle" -> "pprint" [];
 	"pprint" -> "collections" [];
 	"pprint" -> "re" [];
@@ -3339,35 +3339,35 @@ charset="UTF-8";
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "pandas" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "shutil" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "datetime" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "traceback" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_constants" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_weakrefset" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "keyword" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "heapq" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "enum" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "locale" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "weakref" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "ntpath" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "posixpath" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "copyreg" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "io" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "genericpath" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "codecs" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "linecache" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_parse" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "encodings" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "stat" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "collections" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_collections_abc" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "operator" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "types" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_bootlocale" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "re" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "warnings" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_compile" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "reprlib" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "functools" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "abc" [];
-	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_bootlocale" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "enum" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "functools" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "operator" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_parse" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "collections" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "genericpath" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "io" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "reprlib" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "weakref" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "copyreg" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "traceback" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "types" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "stat" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "locale" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_weakrefset" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "keyword" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "linecache" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "posixpath" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_constants" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "codecs" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "ntpath" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "_collections_abc" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "heapq" [];
+	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "sre_compile" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "openpyxl" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "PyQt5" [];
 	"C:\Users\leona\OneDrive\Documentos\projetos py\tabacaria\main.py" -> "C:\Users\leona\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\PyInstaller\hooks\rthooks\pyi_rth_pyqt5.py" [];
@@ -5971,12 +5971,89 @@ charset="UTF-8";
 	"bcrypt" -> "six" [];
 	"bcrypt" -> "_cffi_backend" [];
 	"bcrypt.__about__" -> "__future__" [];
-	"_bootlocale" -> "sys" [];
-	"_bootlocale" -> "_locale" [];
-	"_bootlocale" -> "locale" [];
-	"abc" -> "_abc" [];
-	"abc" -> "_py_abc" [];
-	"_py_abc" -> "_weakrefset" [];
+	"sre_compile" -> "_sre" [];
+	"sre_compile" -> "sre_parse" [];
+	"sre_compile" -> "sre_constants" [];
+	"sre_compile" -> "sys" [];
+	"heapq" -> "_heapq" [];
+	"_collections_abc" -> "abc" [];
+	"_collections_abc" -> "sys" [];
+	"sre_constants" -> "_sre" [];
+	"posixpath" -> "os" [];
+	"posixpath" -> "sys" [];
+	"posixpath" -> "stat" [];
+	"posixpath" -> "genericpath" [];
+	"posixpath" -> "pwd" [];
+	"posixpath" -> "re" [];
+	"linecache" -> "functools" [];
+	"linecache" -> "sys" [];
+	"linecache" -> "os" [];
+	"linecache" -> "tokenize" [];
+	"_weakrefset" -> "_weakref" [];
+	"locale" -> "sys" [];
+	"locale" -> "encodings" [];
+	"locale" -> "re" [];
+	"locale" -> "_collections_abc" [];
+	"locale" -> "builtins" [];
+	"locale" -> "functools" [];
+	"locale" -> "_locale" [];
+	"locale" -> "warnings" [];
+	"locale" -> "os" [];
+	"locale" -> "_bootlocale" [];
+	"stat" -> "_stat" [];
+	"os" -> "abc" [];
+	"os" -> "sys" [];
+	"os" -> "stat" [];
+	"os" -> "_collections_abc" [];
+	"os" -> "posix" [];
+	"os" -> "posixpath" [];
+	"os" -> "nt" [];
+	"os" -> "ntpath" [];
+	"os" -> "os.path" [];
+	"os" -> "warnings" [];
+	"os" -> "subprocess" [];
+	"os" -> "io" [];
+	"types" -> "sys" [];
+	"types" -> "functools" [];
+	"types" -> "_collections_abc" [];
+	"traceback" -> "collections" [];
+	"traceback" -> "itertools" [];
+	"traceback" -> "linecache" [];
+	"traceback" -> "sys" [];
+	"weakref" -> "_weakref" [];
+	"weakref" -> "_weakrefset" [];
+	"weakref" -> "_collections_abc" [];
+	"weakref" -> "sys" [];
+	"weakref" -> "itertools" [];
+	"weakref" -> "copy" [];
+	"weakref" -> "warnings" [];
+	"weakref" -> "atexit" [];
+	"weakref" -> "gc" [];
+	"reprlib" -> "builtins" [];
+	"reprlib" -> "itertools" [];
+	"reprlib" -> "_thread" [];
+	"io" -> "_io" [];
+	"io" -> "abc" [];
+	"genericpath" -> "os" [];
+	"genericpath" -> "stat" [];
+	"collections.abc" -> "_collections_abc" [];
+	"collections" -> "_collections_abc" [];
+	"collections" -> "operator" [];
+	"collections" -> "keyword" [];
+	"collections" -> "sys" [];
+	"collections" -> "heapq" [];
+	"collections" -> "_weakref" [];
+	"collections" -> "itertools" [];
+	"collections" -> "reprlib" [];
+	"collections" -> "_collections" [];
+	"collections" -> "warnings" [];
+	"collections" -> "copy" [];
+	"sre_parse" -> "sre_constants" [];
+	"sre_parse" -> "unicodedata" [];
+	"sre_parse" -> "warnings" [];
+	"operator" -> "builtins" [];
+	"operator" -> "functools" [];
+	"operator" -> "_operator" [];
 	"functools" -> "abc" [];
 	"functools" -> "collections" [];
 	"functools" -> "reprlib" [];
@@ -5986,13 +6063,12 @@ charset="UTF-8";
 	"functools" -> "types" [];
 	"functools" -> "weakref" [];
 	"functools" -> "typing" [];
-	"reprlib" -> "builtins" [];
-	"reprlib" -> "itertools" [];
-	"reprlib" -> "_thread" [];
-	"sre_compile" -> "_sre" [];
-	"sre_compile" -> "sre_parse" [];
-	"sre_compile" -> "sre_constants" [];
-	"sre_compile" -> "sys" [];
+	"enum" -> "sys" [];
+	"enum" -> "types" [];
+	"enum" -> "warnings" [];
+	"abc" -> "_abc" [];
+	"abc" -> "_py_abc" [];
+	"_py_abc" -> "_weakrefset" [];
 	"warnings" -> "sys" [];
 	"warnings" -> "linecache" [];
 	"warnings" -> "tracemalloc" [];
@@ -6006,18 +6082,6 @@ charset="UTF-8";
 	"tracemalloc" -> "os.path" [];
 	"tracemalloc" -> "pickle" [];
 	"tracemalloc" -> "_tracemalloc" [];
-	"os" -> "abc" [];
-	"os" -> "sys" [];
-	"os" -> "stat" [];
-	"os" -> "_collections_abc" [];
-	"os" -> "posix" [];
-	"os" -> "posixpath" [];
-	"os" -> "nt" [];
-	"os" -> "ntpath" [];
-	"os" -> "os.path" [];
-	"os" -> "warnings" [];
-	"os" -> "subprocess" [];
-	"os" -> "io" [];
 	"re" -> "enum" [];
 	"re" -> "sre_compile" [];
 	"re" -> "sre_parse" [];
@@ -6025,27 +6089,9 @@ charset="UTF-8";
 	"re" -> "_locale" [];
 	"re" -> "copyreg" [];
 	"re" -> "sre_constants" [];
-	"types" -> "sys" [];
-	"types" -> "functools" [];
-	"types" -> "_collections_abc" [];
-	"operator" -> "builtins" [];
-	"operator" -> "functools" [];
-	"operator" -> "_operator" [];
-	"_collections_abc" -> "abc" [];
-	"_collections_abc" -> "sys" [];
-	"collections.abc" -> "_collections_abc" [];
-	"collections" -> "_collections_abc" [];
-	"collections" -> "operator" [];
-	"collections" -> "keyword" [];
-	"collections" -> "sys" [];
-	"collections" -> "heapq" [];
-	"collections" -> "_weakref" [];
-	"collections" -> "itertools" [];
-	"collections" -> "reprlib" [];
-	"collections" -> "_collections" [];
-	"collections" -> "warnings" [];
-	"collections" -> "copy" [];
-	"stat" -> "_stat" [];
+	"_bootlocale" -> "sys" [];
+	"_bootlocale" -> "_locale" [];
+	"_bootlocale" -> "locale" [];
 	"encodings.zlib_codec" -> "codecs" [];
 	"encodings.zlib_codec" -> "zlib" [];
 	"encodings.uu_codec" -> "codecs" [];
@@ -6229,66 +6275,13 @@ charset="UTF-8";
 	"encodings.big5" -> "_multibytecodec" [];
 	"encodings.base64_codec" -> "codecs" [];
 	"encodings.base64_codec" -> "base64" [];
-	"encodings.ascii" -> "codecs" [];
-	"encodings" -> "codecs" [];
-	"encodings" -> "sys" [];
-	"encodings" -> "_winapi" [];
-	"sre_parse" -> "sre_constants" [];
-	"sre_parse" -> "unicodedata" [];
-	"sre_parse" -> "warnings" [];
-	"linecache" -> "functools" [];
-	"linecache" -> "sys" [];
-	"linecache" -> "os" [];
-	"linecache" -> "tokenize" [];
-	"genericpath" -> "os" [];
-	"genericpath" -> "stat" [];
-	"io" -> "_io" [];
-	"io" -> "abc" [];
-	"posixpath" -> "os" [];
-	"posixpath" -> "sys" [];
-	"posixpath" -> "stat" [];
-	"posixpath" -> "genericpath" [];
-	"posixpath" -> "pwd" [];
-	"posixpath" -> "re" [];
-	"weakref" -> "_weakref" [];
-	"weakref" -> "_weakrefset" [];
-	"weakref" -> "_collections_abc" [];
-	"weakref" -> "sys" [];
-	"weakref" -> "itertools" [];
-	"weakref" -> "copy" [];
-	"weakref" -> "warnings" [];
-	"weakref" -> "atexit" [];
-	"weakref" -> "gc" [];
-	"locale" -> "sys" [];
-	"locale" -> "encodings" [];
-	"locale" -> "re" [];
-	"locale" -> "_collections_abc" [];
-	"locale" -> "builtins" [];
-	"locale" -> "functools" [];
-	"locale" -> "_locale" [];
-	"locale" -> "warnings" [];
-	"locale" -> "os" [];
-	"locale" -> "_bootlocale" [];
-	"enum" -> "sys" [];
-	"enum" -> "types" [];
-	"enum" -> "warnings" [];
-	"heapq" -> "_heapq" [];
-	"_weakrefset" -> "_weakref" [];
-	"sre_constants" -> "_sre" [];
-	"traceback" -> "collections" [];
-	"traceback" -> "itertools" [];
-	"traceback" -> "linecache" [];
-	"traceback" -> "sys" [];
+	"_sre" -> "copy" [];
+	"_sre" -> "re" [];
 	"_posixsubprocess" -> "gc" [];
-	"ntpath" -> "os" [];
-	"ntpath" -> "sys" [];
-	"ntpath" -> "stat" [];
-	"ntpath" -> "genericpath" [];
-	"ntpath" -> "nt" [];
-	"ntpath" -> "string" [];
 	"_pickle" -> "codecs" [];
 	"_pickle" -> "copyreg" [];
 	"_pickle" -> "_compat_pickle" [];
+	"gc" -> "time" [];
 	"datetime" -> "time" [];
 	"datetime" -> "math" [];
 	"datetime" -> "sys" [];
@@ -6303,15 +6296,22 @@ charset="UTF-8";
 	"_strptime" -> "_thread" [];
 	"_datetime" -> "time" [];
 	"_datetime" -> "_strptime" [];
+	"time" -> "_strptime" [];
+	"ntpath" -> "os" [];
+	"ntpath" -> "sys" [];
+	"ntpath" -> "stat" [];
+	"ntpath" -> "genericpath" [];
+	"ntpath" -> "nt" [];
+	"ntpath" -> "string" [];
+	"posix" -> "resource" [];
+	"encodings.ascii" -> "codecs" [];
+	"encodings" -> "codecs" [];
+	"encodings" -> "sys" [];
+	"encodings" -> "_winapi" [];
 	"codecs" -> "builtins" [];
 	"codecs" -> "sys" [];
 	"codecs" -> "_codecs" [];
 	"codecs" -> "encodings" [];
-	"time" -> "_strptime" [];
-	"gc" -> "time" [];
-	"_sre" -> "copy" [];
-	"_sre" -> "re" [];
-	"posix" -> "resource" [];
 	"<PyiModuleGraph>" -> "PyQt5" [];
 	"zipfile" -> "importlib" [];
 	"py_compile" -> "importlib" [];
